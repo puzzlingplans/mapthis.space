@@ -1,5 +1,16 @@
 # mapthis.space
 
+MapThisSpace is an OpenStreetMap POI editor written in JavaScript using the Leaflet framework. 
+
+Use it at http://mapthis.space
+
+Features
+
+  * Optimized for mobile devices
+  * Add POIs, edit tags, reposition nodes
+  * Preset templates extended from iD editor
+  * View OSM and Bing layers
+
 ## Dependencies
 
 jQuery 2+
