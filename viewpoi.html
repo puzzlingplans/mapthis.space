@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<title>MapThisSpace ~ OpenStreetMap POI Editor</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+	<link href="./webfont-maki/css/maki-min.css" rel="stylesheet">
+	<link href="./osmic-font/osmic.css" rel="stylesheet">
+
+	 <script src="./js/PresetsDB.js"></script>
+
+	<script src="./js/jquery-2.1.4.min.js"></script>
+	
+	<link rel="stylesheet" href="./jquery-ui-1.11.4/jquery-ui.min.css">
+	<script src="./jquery-ui-1.11.4/jquery-ui.min.js"></script>
+	
+	<script type="text/javascript" src="./selectize/selectize.js"></script>
+	<link rel="stylesheet" type="text/css" href="./selectize/selectize.css" />
+
+	<script type="text/javascript" src="./js/opening_hours.js"></script>
+
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+		}
+		html, body {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+		/* http://stackoverflow.com/questions/12046315/prevent-overscrolling-of-web-page */
+		body > div {
+		    height: 100%;
+		    overflow-y: scroll;
+		    overflow-x: hidden;
+		    -webkit-overflow-scrolling: touch;
+		}
+		tr:hover {
+			background-color: #eeeeff;
+			cursor: pointer;
+		}
+		.sign {
+  display: inline-block;
+  padding: 0 10px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  width:100px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 2px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+
+  		.label {
+  				font-weight: bold;
+  				background-color: #eeeeee;
+  		}
+  		@media (min-width: 550px) {
+  			.label {
+	  			text-align: right;
+	  		}
+  		}
+  		.right {
+  			float: right;
+  		}
+  		.hours {
+  			line-height: 1.0;
+  			font-size: 1.2rem;
+  			padding-bottom: 2rem;
+  		}
+  		.hours_warnings {
+  			color: #ff3333;
+  		}
+  		.hours_ok {
+  			color: #339933;
+  		}
+  		.hours_visual button {
+  			padding-left: 10px;
+  			padding-right: 10px;
+  		}
+	</style>
+</head>
+<body>
+
+<div id="poidetail" class="detail">
+
+	<div class="container">
+		<div class="row">
+			<button class="btn_close">Close</button>
+			<button class="btn_submit button-primary" style="display:none">Submit</button>
+			<span class="content right" style="display:none">
+				<button class="btn_edit">Edit</button>
+			</span>
+			<span class="editor right" style="display:none">
+				<button class="btn_done button-primary">Done</button>
+			</span>
+		</div>
+		<div class="row">
+			<div class="one-half column">
+				<div class="content" style="display:none">
+					<h4>
+					<i id="poi_icon"></i>
+					<span id="poi_type"></span>
+					</h4>
+				</div>
+				<div class="editor" style="display:none">
+                                        What type of place is this?<br>
+                                        <select id="poi_select_type" style="width:100%">
+                                        </select>
+                                </div>
+			</div>
+		</div>
+	</div>
+
+	<div id="poi_container" class="container afterpreset" style="display:none">
+	</div>
+	
+	<div class="container content" style="display:none; margin-top:16px">
+		<div class="row">
+			<div class="one-half column">
+				<span class="modification">
+					<button class="btn_flag">Flag a Problem</button>
+				</span>
+				<span class="modification">
+					<button class="btn_revert">Revert</button>
+				</span>
+				<span class="newobject">
+					<button class="btn_delete">Delete</button>
+				</span>
+				<span class="nodesonly">
+					<button class="btn_reposition">Reposition</button>
+				</span>
+				<!--
+				<span class="buildingsonly">
+					<button class="btn_extractnode">Make Multi-tenant</button>
+				</span>
+				-->
+			</div>
+		</div>
+	</div>
+	<div class="container editor" style="display:none; margin-top:16px">
+			<span class="right afterpreset" style="display:none">
+				<button class="btn_done button-primary">Done</button>
+			</span>
+		</div>
+	</div>
+	
+	<div id="poi_protos" class="container" style="display:none">
+		<div class="row poi_static">
+			<div class="one-third column label"><span>Label</span></div>
+			<div class="two-thirds column content"><span>Content</span></div>
+			<div class="two-thirds column editor" style="display:none"></div>
+		</div>
+		<div class="poi_edit_text poi_edit_localized">
+			<input type="text" autocomplete="off" style="width:100%"></input>
+		</div>
+		<div class="poi_edit_textarea">
+			<input type="textarea" autocomplete="off" style="width:100%"></input>
+		</div>
+		<div class="poi_edit_number poi_edit_maxspeed">
+			<input type="number" autocomplete="off"></input>
+		</div>
+		<div class="poi_edit_tel">
+			<input type="tel" autocomplete="off"></input>
+		</div>
+		<div class="poi_edit_url">
+			<input type="url" autocomplete="off" style="width:100%"></input>
+		</div>
+		<div class="poi_edit_combo poi_edit_typeCombo">
+			<input type="text" autocomplete="off" style="width:75%"></input>
+		</div>
+		<div class="poi_edit_radio">
+		</div>
+		<div class="poi_edit_check">
+			<button class="radio" value="yes">Yes</button>
+			<button class="radio" value="no">No</button>
+		</div>
+		<div class="poi_edit_hours">
+			<div>
+				<input type="text" autocomplete="off" style="width:100%"></input>
+			</div>
+			<div class="hours hours_ok" style="display:none">
+				<i class="fa fa-check-square"></i> Format OK
+			</div>
+			<div class="hours hours_warnings" style="display:none">
+				<span></span>
+			</div>
+			<!--
+			<div class="hours hours_visual">
+				<button>Su</button>
+				<button>Mo</button>
+				<button>Tu</button>
+				<button>We</button>
+				<button>Th</button>
+				<button>Fr</button>
+				<button>Sa</button>
+			</div>
+			-->
+		</div>
+		<div class="poi_edit_address">
+			<div>
+				<input class="field_addr_housenumber" autocomplete="off" type="text" style="width:25%"></input>
+				<input class="field_addr_street" autocomplete="off" type="text" style="width:70%"></input>
+			</div>
+			<div>
+				<input class="field_addr_city" autocomplete="off" type="text" style="width:50%"></input>
+				<input class="field_addr_state" autocomplete="off" type="text" style="width:15%"></input>
+				<input class="field_addr_postcode" autocomplete="off" type="text" style="width:30%"></input>
+			</div>
+		</div>
+		<div class="poi_edit_access">
+			Open to the public?&nbsp;
+			<button class="radio" value="yes">Yes</button>
+			<button class="radio" value="no">No</button>
+		</div>
+		<div class="poi_edit_wikipedia">
+			<select>
+			</select>
+		</div>
+		<div class="poi_edit_access_old">
+			<div>
+				Open to the public?&nbsp;
+				<button class="radio" value="yes">Yes</button>
+				<button class="radio" value="no">No</button>
+			</div>
+			<table>
+				<tr>
+					<th>General</th>
+					<td>
+						<select>
+							<option id=""></option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+</div>
+
+<script>
+
+// http://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+var qs = (function(a) {
+    if (a == "") return {};
+    var b = {};
+    for (var i = 0; i < a.length; ++i)
+    {
+        var p=a[i].split('=', 2);
+        if (p.length == 1)
+            b[p[0]] = "";
+        else
+            b[p[0]] = decodeURIComponent(p[1].replace(/\+/g, " "));
+    }
+    return b;
+})(window.location.search.substr(1).split('&'));
+
+//
+
+var presets_db;
+var field_defs;
+var preset_defs;
+
+var original_obj = qs.obj ? jQuery.parseJSON(qs.obj) : null;
+var is_blank_obj = original_obj == null || original_obj.tags == null || $.isEmptyObject(original_obj.tags);
+var is_new_obj = original_obj == null || original_obj.id < 0;
+var original_tags = original_obj ? original_obj.tags : {};
+/*
+var original_tags = {
+	'amenity': 'restaurant',
+	'name': 'Hoovers',
+	'cuisine': 'American',
+	'opening_hours': '11am-9pm',
+	'delivery': 'yes',
+	'operator': 'Transnational Food Inc.',
+            'addr:city': 'Cocoa Beach',
+            'addr:housenumber': '1234',
+            'addr:postcode': '32931',
+            'addr:state': 'FL',
+            'addr:street': 'Wayward Way',
+            'access': 'private',
+            'foot': 'yes',
+       'internet_access': 'wlan',
+       'wikipedia': 'Olive_Garden',
+};
+*/
+var current_tags = $.extend(true, {}, original_tags);
+var original_preset;
+var current_preset;
+var is_editing;
+
+function setTag(k, v)
+{
+	if (v == null) {
+		delete current_tags[k];
+	} else {
+		current_tags[k] = v;
+	}
+}
+
+function key2id(key)
+{
+	return key.replace(':','_');
+}
+
+function appendLabel(tags, fdef, value)
+{
+	var table = $('#poi_container');
+	var row = $('#poi_protos > .poi_static').clone();
+	row.find('.label > span').text(fdef.label);
+	// set initial display text
+	var display = row.find('.content > span');
+	// TODO: not needed for address/access/gender/structure?
+	if (value)
+	{
+		display.text(value);
+	} else {
+		display.text('');
+	}
+	// set ID of display text, if single-key
+	if (fdef.key)
+	{
+		display.attr('id','disp_' + key2id(fdef.key));
+	}
+	else if (fdef.keys)
+	{
+		var parent = display.parent();
+		display.remove();
+		display = $('<div/>').appendTo(parent);
+		for (var i=0; i<fdef.keys.length; i++)
+		{
+			var key = fdef.keys[i];
+			var value = tags[key];
+			$('<span/>').attr('id','disp_'+key2id(key)).text(value).appendTo(display);
+			$('<i> </i>').appendTo(display);
+		}
+	}
+	row.appendTo(table);
+	
+	// append editor row
+	var edit = $('#poi_protos > .poi_edit_' + fdef.type).clone();
+	row.find('.editor').append(edit);
+	if (fdef.key)
+	{
+		edit.prop('key',key2id(fdef.key));
+	}
+	// build options list, if present
+	var opts;
+	if (fdef.strings && fdef.strings.options) {
+		opts = fdef.strings.options;
+	} else if (fdef.options) {
+		opts = {};
+		for (var i=0; i<fdef.options.length; i++) {
+			var v = fdef.options[i];
+			opts[v] = v.charAt(0).toUpperCase() + v.slice(1);
+		}
+	} else {
+		opts = {};
+	}
+	
+	if (fdef.type == 'combo' || fdef.type == 'typeCombo')
+	{
+		var canCreate = (fdef.type == 'typeCombo');
+		var key = fdef.key; // TODO: assert?
+		var items = $.map(opts, function(y,x) { return { value:x, label:y }; });
+		var selector = edit.find('input').autocomplete({
+			source: items,
+			change: inputChangeFn(key),
+			minLength: 0
+		}).val(value).focus(function() {
+		    $(this).autocomplete("search", $(this).val());
+		});
+		// fetch suggestions from local fs
+		if (items.length == 0)
+		{
+			var sel = selector;
+			$.ajax({
+				url: './keys/' + key + '.json',
+				dataType: 'json',
+				context: {sel:sel, value:value},
+				success: function(data) {
+					if (data && data.data) {
+						var items = data.data;
+						this.sel.autocomplete("option", "source", items);
+					}
+				}
+			});
+		}
+		// TODO: placeholder
+	}
+	else if (fdef.type == 'radio')
+	{
+		for (var k in opts) 
+		{
+			var v = opts[k];
+			if (v) {
+				$('<button class="radio"/>').val(k).text(v).appendTo(edit);
+				edit.append(' ');
+			}
+		}
+	}
+	else if (fdef.type == 'xxxradio') 
+	{
+		var form = $('<form/>').appendTo(edit);
+		for (var k in opts) 
+		{
+			var v = opts[k];
+			$('<input type="radio">').val(k).appendTo(form);
+			$('<span>').text(v).appendTo(form);
+			$('<br>').appendTo(form);
+		}
+	}
+	else if (fdef.type == 'check' || fdef.type == 'access')
+	{
+		if (value) row.find("button[value='" + value + "']").addClass('button-primary');
+	}
+	else if (fdef.type == 'access')
+	{
+		// TODO
+		var table = edit.find('table');
+		var trow = edit.find('tr');
+		var select = edit.find('select');
+		for (var j in fdef.strings.options)
+		{
+			var optval = fdef.strings.options[j];
+			var option = $('<option/>');
+			option.attr({ 'value': j }).text(optval.title);
+			// TODO: description
+			select.append(option);
+		}
+		for (var i in fdef.keys)
+		{
+			var key = fdef.keys[i];
+			var newrow = trow.clone().appendTo(table);
+			newrow.find('th').text(fdef.strings.types[key]);
+			newrow.find('select').val(tags[key]);
+		}
+		trow.remove();
+	}
+	else if (fdef.type == 'wikipedia')
+	{
+		edit.find('select').selectize({
+			valueField: 'key',
+			labelField: 'name',
+			searchField: 'name',
+	                onChange: function(value) {
+	                	setTag(fdef.key, value);
+	                	display.text(value);
+	                },
+			load: function(query, callback) {
+				if (!query.length) return callback();
+				$.ajax({
+					url: "http://en.wikipedia.org/w/api.php",
+					dataType: "jsonp",
+					data: {
+						'action': "opensearch",
+						'format': "json",
+						'search': query,
+					},
+					success: function(data) {
+						var res = [];
+						var values = data[1];
+						var descs = data[2];
+						var keys = data[3];
+						for (var i=0; i<keys.length; i++)
+						{
+							// TODO: language
+							res.push({ url:keys[i], key:'en:'+values[i], name:values[i], summary:descs[i] });
+						}
+						callback(res);
+					},
+				});
+			},
+		});
+	}
+	else if (fdef.keys)
+	{
+		// TODO
+		for (var i in fdef.keys)
+		{
+			var key = fdef.keys[i];
+			var value = tags[key];
+			var keyid = key2id(key)
+			var input = row.find('input.field_' + keyid);
+			var ks = keyStats[key];
+			if (ks) {
+				var valuelist = [];
+				for (var k in ks)
+					if (ks[k] > 1)
+						valuelist.push({ id: k, score: ks[k] });
+				valuelist.sort(function(a,b) { return b.score-a.score; });
+				input.autocomplete({ 
+					//autoFocus: true,
+					minLength: 0,
+					change: inputChangeFn(key),
+					source: valuelist.map(function(x){return x.id;})
+				}).focus(function() {
+				    $(this).autocomplete("search", $(this).val());
+				});
+			}
+			input.val(value);
+			if (fdef.strings && fdef.strings.placeholders)
+				input.attr('placeholder', fdef.strings.placeholders[key.slice(key.indexOf(':')+1)]);
+		        // TODO: placeholder
+		        // TODO: change display text
+			input.change(inputChangeFn(key));
+		}
+	}
+	else if (fdef.key)
+	{
+		var input = edit.find('input');
+		if (input)
+		{
+			input.val(value);
+			input.attr('placeholder', fdef.placeholder);
+			input.change(inputChangeFn(fdef.key));
+			// for opening_hours style fields
+			if (fdef.type == 'hours')
+			{
+				// TODO
+				var warns = row.find('.hours_warnings');
+				var oks = row.find('.hours_ok');
+				input.change(function(event)
+				{
+					try {
+						var val = $(this).val();
+						if (!val || val == '')
+						{
+							warns.hide();
+							oks.hide();
+							return;
+						}
+						var oh = new opening_hours(val);
+						var text = oh.prettifyValue();
+						var warnings = oh.getWarnings();
+						if (warnings && warnings.length) 
+						{
+							warns.show().find('span').text(warnings.join(', '));
+							oks.hide();
+						}
+						else
+						{
+							warns.hide();
+							oks.show(); //.text(text);
+						}
+					} catch (ex) {
+						console.log(ex); // TODO
+						warns.show().find('span').text(ex.toString());
+						oks.hide();
+					}
+				}).trigger('change');
+			}
+		}
+	}
+	else
+	{
+		console.log("No key", fdef);
+	}
+	return row;
+}
+
+function inputChangeFn(key,ui)
+{
+        return function(v) {
+        	var val = v == null ? null : typeof v == 'string' ? v : $(this).val();
+                setTag(key, val);
+                $('#disp_' + key2id(key)).text(val);
+        };
+}
+
+function addControlForField(tags, fdef, keysused)
+{
+	//console.log(fdef);
+	var key = fdef.key;
+	if (key)
+	{
+		if (keysused[key])
+			return;
+			
+		var value = tags[key];
+		var row = appendLabel(tags, fdef, value);
+		//row.addClass('poi_field_' + key2id(key));
+		keysused[key] = true;
+	}
+	else if (fdef.keys)
+	{
+		var keys = fdef.keys;
+		for (var i=0; i<keys.length; i++)
+		{
+			var value = tags[keys[i]];
+			keysused[keys[i]] = true;
+		}
+		appendLabel(tags, fdef);
+	}
+	else
+	{
+		console.log("No key", fdef);
+	}
+}
+
+var blank_preset = {
+	'name': '',
+	'fields': [],
+	'tags': {},
+	'id': 'empty',
+};
+
+function updateFields(tags, preset_name)
+{
+ 	// if no preset, lookup best match
+	var preset = preset_name ? preset_defs[preset_name] : presets_db.findMatch(tags);
+	console.log('tags', tags);
+	console.log('preset', preset);
+	if (preset == null) preset = blank_preset; // preset_defs['place'];
+	var keysused = {};
+	// set preset icon and name
+	$('#poi_icon').removeClass().addClass(presets_db.getIconForPreset(preset));
+	$('#poi_type').text(preset.name);
+	// clear fields
+	$('#poi_container').empty();
+	// add name
+	addControlForField(tags, field_defs['name'], keysused);
+	// add fields
+	if (preset.fields)
+	{
+                for (var i=0; i<preset.fields.length; i++)
+                {
+                        var fdef = field_defs[preset.fields[i]];
+                        // ignore "building area"
+                        if (fdef.geometry == null)
+                        {
+	                        addControlForField(tags, fdef, keysused);
+	                }
+                }
+		//console.log(keysused);
+	}
+	// show leftover keys
+	// TODO: separator?
+	for (var key in tags)
+	{
+		var fdef = field_defs[key];
+		if (fdef)
+		{
+			// make sure the key hasn't yet been used, and it's not in the preset match
+			if (keysused[key] == null && preset.tags[key] == null)
+			{
+				addControlForField(tags, fdef, keysused);
+			}
+		}
+	}
+	// common things like website
+	var pst = preset.tags;
+	if (pst['craft'] || pst['office'] || pst['shop'] || pst['tourism'])
+	{
+		addControlForField(tags, field_defs['phone'], keysused);
+		addControlForField(tags, field_defs['website'], keysused);
+	}
+	//addControlForField(tags, field_defs['email'], keysused);
+	//if (tags['historic'] || tags['tourism']) addControlForField(tags, field_defs['wikipedia'], keysused);
+	
+	// activate radio btns
+	$('#poi_container').find('button.radio').click(function() {
+		var btn = $(this);
+		var cls = 'button-primary';
+		if (btn.hasClass(cls))
+		{
+			btn.removeClass(cls);
+			inputChangeFn(btn.parent().prop('key'))(null);
+		} else {
+			btn.siblings().removeClass(cls);
+			btn.addClass(cls);
+			inputChangeFn(btn.parent().prop('key'))(btn.val());
+		}
+	});
+	
+	// hide all blank rows until editors shown
+	if (!is_editing) hideBlankRows();
+
+        // fade in if not blank
+        if (preset && preset.name && preset.name != '') {
+        	$('.afterpreset').fadeIn();
+        }
+	
+	return preset;
+}
+
+function showBlankRows()
+{
+	$('.poi_static').show();
+}
+
+function hideBlankRows()
+{
+	$('.poi_static').hide().has('.content:has(span:parent)').show();
+}
+
+function formatPreset(preset)
+{
+	var $s = $('<span><i class="oc-circle"></i>' + preset.text.name + '</span>');
+	return $s;
+}
+
+var top_presets = ['amenity/restaurant','amenity/bar','amenity/fast_food','amenity/fuel',
+		'shop/convenience','shop/supermarket','shop/clothes',
+		'tourism/hotel','tourism/motel','tourism/attraction','tourism/viewpoint','tourism/museum','tourism/guest_house',
+		'amenity/cafe','shop/bakery',
+		'office/company','office/government',
+		'amenity/parking','tourism/information',
+		'tourism/picnic_site','tourism/camp_site',
+		'leisure/pitch','leisure/swimming_pool','leisure/park','leisure/playground',
+		'amenity/place_of_worship','amenity/school','amenity/bank','amenity/post_box',
+		'historic/memorial'];
+
+function isPresetSearchable(preset)
+{
+	return !(preset.searchable == false);
+}
+
+function loadPresets(data) 
+{
+	console.log("Loading presets");
+	data = presets_db = new PresetsDB(data);
+	field_defs = data.fields;
+	preset_defs = data.presets;
+	$.each(top_presets, function(i,k) { preset_defs[k].rank = 100-i; });
+	original_preset = current_preset = updateFields(original_tags);
+	// TODO: remove original preset tags, add new ones
+	$('#poi_select_type').selectize({
+		options: $.map(preset_defs, function(v,k) {
+			if (!isPresetSearchable(v)) return;
+			return v;
+		}),
+		items: [original_preset.id],
+		valueField: 'id',
+		labelField: 'name',
+		searchField: ['name', 'terms', 'fields'],
+		sortField: [{field: 'rank', direction: 'desc'}, {field: '$score'}],
+		render: {
+			option: function(item, escape) {
+				return '<div>' + ('<i class="' + presets_db.getIconForPreset(item) + '"></i>&nbsp;') + escape(item.name) + '</div>';
+			}
+		},
+		highlight: true,
+		onChange: function(value) {
+			if (preset_defs[value]) {
+				removePresetTags();
+				current_preset = updateFields(current_tags, value);
+				addPresetTags();
+			}
+		}
+	});
+}
+
+function removePresetTags()
+{
+	$.each(current_preset.tags, function(k,v) { setTag(k, null); });
+}
+
+function addPresetTags()
+{
+	$.each(current_preset.tags, function(k,v) { setTag(k, v); });
+}
+
+function startEditing()
+{
+	is_editing = true;
+	var k = 500;
+	showBlankRows();
+	$('.content').hide(k);
+	$('.blank').show(k);
+	$('.editor').show(k);
+	if (top.maximizeDetailPane) top.maximizeDetailPane();
+}
+
+function stopEditing()
+{
+	is_editing = false;
+	var k = 500;
+	hideBlankRows();
+	$('.content').show(k);
+	$('.blank').hide(k);
+	$('.editor').hide(k);
+	// TODO
+	if (dirtyEdit())
+		$('.btn_close').addClass('button-primary');
+	else
+		$('.btn_close').removeClass('button-primary');
+	if (top.minimizeDetailPane) top.minimizeDetailPane();
+}
+
+function dirtyEdit()
+{
+	return JSON.stringify(original_tags) != JSON.stringify(current_tags);
+}
+
+$('.btn_edit').click(startEditing);
+$('.btn_done').click(stopEditing);
+$('.btn_revert').click(function() {
+	// TODO: check dirty?
+	if (confirm("Are you sure you want to revert all of your changes (since last upload) to this object?"))
+	{
+		current_tags = $.extend(true, {}, original_tags);
+		updateFields(original_tags);
+		stopEditing();
+		top.revertCurrentObject();
+		top.hideDetailPane();
+	}
+});
+
+// TODO: use start/stopEditing()?
+if (is_blank_obj)
+{
+	$('.editor').fadeIn();
+	$('.content').hide();
+	is_editing = true;
+	if (top.maximizeDetailPane) top.maximizeDetailPane();
+} else {
+	$('.content').fadeIn();
+	is_editing = false;
+}
+
+if (is_new_obj)
+{
+	$('.modification').remove();
+} else {
+	$('.newobject').remove();
+}
+
+if (!(original_obj != null && original_obj.type == 'node'))
+{
+	$('.nodesonly').remove();
+}
+if (!(original_obj != null && original_obj.type == 'way' && current_tags['building']))
+{
+	$('.buildingsonly').remove();
+}
+
+$('.btn_flag').click(function() {
+	top.flagCurrentObject();
+});
+
+$('.btn_gone').click(function() {
+	if (confirm("Does this place no longer exist?")) {
+		top.deleteCurrentObject();
+		top.hideDetailPane();
+	}
+});
+
+$('.btn_delete').click(function() {
+	if (confirm("Delete this place?")) {
+		top.deleteCurrentObject();
+		top.hideDetailPane();
+	}
+});
+
+$('.btn_reposition').click(function() {
+	top.minimizeDetailPane();
+	top.repositionCurrentObject();
+});
+
+$('.btn_extractnode').click(function() {
+	top.minimizeDetailPane();
+	top.extractNodeFromWay();
+});
+
+$('.btn_close').click(function() {
+	// TODO: callbacks
+	console.log('update', current_tags);
+	top.updateTags(current_tags);
+	top.hideDetailPane();
+});
+
+// build key statistics
+var keyStats = {};
+if (top.getCachedPOIs)
+{
+	var pois = top.getCachedPOIs();
+	for (var id in pois)
+	{
+		var obj = pois[id];
+		if (obj.tags) 
+		{
+			for (var key in obj.tags) 
+			{
+				if (key.indexOf(':') > 0)
+				{
+					var value = obj.tags[key];
+					var ks = keyStats[key];
+					if (ks == null) 
+						ks = keyStats[key] = {};
+					if (ks[value])
+						ks[value]++;
+					else
+						ks[value] = 1;
+					//console.log(key + " " + value + " " + ks[value]);
+				}
+			}
+		}
+	}
+}
+
+// load presets, update fields
+if (top.presets_db)
+{
+	loadPresets(top.presets_db);
+} else {
+	$.getJSON('presets/db.json', loadPresets);
+	console.log("Fetching presets");
+}
+
+</script>
+
+</body>
+</html>

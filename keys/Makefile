@@ -1,0 +1,147 @@
+
+all: aerialway.json aeroway.json amenity.json barrier.json building.json craft.json entrance.json \
+	highway.json historic.json information.json landuse.json leisure.json man_made.json \
+	natural.json office.json piste.json place.json power.json railway.json shop.json \
+	substation.json tourism.json waterway.json \
+	access.json \
+	aerialway.json \
+	aerialway\:access.json \
+	aerialway\:bubble.json \
+	aerialway\:capacity.json \
+	aerialway\:duration.json \
+	aerialway\:heating.json \
+	aerialway\:occupancy.json \
+	aerialway\:summer\:access.json \
+	aeroway.json \
+	amenity.json \
+	artwork_type.json \
+	atm.json \
+	backrest.json \
+	barrier.json \
+	bench.json \
+	bicycle_parking.json \
+	boundary.json \
+	brand.json \
+	building.json \
+	building\:levels.json \
+	capacity.json \
+	collection_times.json \
+	construction.json \
+	content.json \
+	country.json \
+	covered.json \
+	craft.json \
+	crop.json \
+	crossing.json \
+	cuisine.json \
+	delivery.json \
+	denomination.json \
+	denotation.json \
+	description.json \
+	direction.json \
+	drive_through.json \
+	ele.json \
+	electrified.json \
+	emergency.json \
+	entrance.json \
+	except.json \
+	fee.json \
+	fire_hydrant\:type.json \
+	fixme.json \
+	fuel.json \
+	fuel\:biodiesel.json \
+	fuel\:diesel.json \
+	fuel\:e10.json \
+	fuel\:e85.json \
+	fuel\:lpg.json \
+	fuel\:octane_100.json \
+	fuel\:octane_91.json \
+	fuel\:octane_95.json \
+	fuel\:octane_98.json \
+	gauge.json \
+	generator\:method.json \
+	generator\:source.json \
+	generator\:type.json \
+	highway.json \
+	historic.json \
+	incline.json \
+	information.json \
+	internet_access.json \
+	lamp_type.json \
+	landuse.json \
+	lanes.json \
+	leaf_cycle.json \
+	leaf_type.json \
+	leisure.json \
+	length.json \
+	lit.json \
+	location.json \
+	man_made.json \
+	mtb\:scale.json \
+	mtb\:scale\:imba.json \
+	mtb\:scale\:uphill.json \
+	natural.json \
+	network.json \
+	note.json \
+	office.json \
+	oneway.json \
+	opening_hours.json \
+	operator.json \
+	park_ride.json \
+	parking.json \
+	piste\:difficulty.json \
+	piste\:grooming.json \
+	piste\:type.json \
+	place.json \
+	population.json \
+	power.json \
+	power_supply.json \
+	railway.json \
+	recycling\:cans.json \
+	recycling\:clothes.json \
+	recycling\:glass.json \
+	recycling\:paper.json \
+	religion.json \
+	restriction.json \
+	route.json \
+	route_master.json \
+	sac_scale.json \
+	sanitary_dump_station.json \
+	seasonal.json \
+	service.json \
+	service\:bicycle\:chain_tool.json \
+	service\:bicycle\:pump.json \
+	shelter.json \
+	shelter_type.json \
+	shop.json \
+	sloped_curb.json \
+	smoking.json \
+	smoothness.json \
+	social_facility\:for.json \
+	sport.json \
+	substation.json \
+	supervised.json \
+	surface.json \
+	tactile_paving.json \
+	takeaway.json \
+	toilets\:disposal.json \
+	tourism.json \
+	tower\:type.json \
+	tracktype.json \
+	trail_visibility.json \
+	trees.json \
+	tunnel.json \
+	type.json \
+	vending.json \
+	water.json \
+	water_point.json \
+	waterway.json \
+	wetland.json \
+	wheelchair.json
+
+
+%.json:
+	curl "http://taginfo.openstreetmap.org/api/4/key/values?key=$*&page=1&rp=50&sortname=count&sortorder=desc" > $@
+
+sortedkeys.out: all
+	jq -c ".data[]" *.json | sort -t ':' -k 3 -n -r > sortedkeys.out

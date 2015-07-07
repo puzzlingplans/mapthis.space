@@ -1,0 +1,225 @@
+{
+    "amenity/retail": {
+        "fields": [
+            "address",
+            "building_area",
+            "opening_hours",
+            "phone",
+            "website",
+            "wheelchair"
+        ],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "searchable": false
+    },
+    "amenity/hospitality": {
+        "inherits": ["amenity/retail"],
+        "fields": [
+            "smoking",
+            "internet_access",
+            "outdoor_seating"
+        ],
+        "searchable": false
+    },
+    
+    "amenity/animal_boarding": {
+        "icon": "pet",
+        "inherits": ["amenity/retail"],
+        "terms": [
+            "pet",
+            "pets",
+            "animal",
+            "animals",
+            "dog",
+            "dogs",
+            "cat",
+            "cats"
+        ],
+        "tags": {
+            "amenity": "animal_boarding"
+        },
+        "name": "Animal Boarding"
+    },
+    "amenity/bar": {
+        "icon": "bar",
+        "inherits": ["amenity/hospitality"],
+        "fields": [
+        ],
+        "terms": [
+            "dive",
+            "beer",
+            "bier",
+            "booze",
+            "alcohol",
+            "wine",
+            "liquor",
+            "drink",
+            "drinks",
+            "saloon"
+        ],
+        "tags": {
+            "amenity": "bar"
+        },
+        "name": "Bar"
+    },
+    "amenity/stripclub": {
+        "icon": "bar",
+        "inherits": ["amenity/bar"],
+        "terms": [
+            "club",
+            "strip",
+            "stripper",
+            "nude",
+            "nudie",
+            "naked",
+            "sex",
+            "adult",
+            "cabaret",
+            "nachtclub",
+            "nightclub"
+        ],
+        "tags": {
+            "amenity": "stripclub"
+        },
+        "name": "Strip Club"
+    },
+    "amenity/shower": {
+        "icon": "shower",
+        "geometry": [
+            "point",
+            "vertex"
+        ],
+        "tags": {
+            "amenity": "shower"
+        },
+        "name": "Shower"
+    },
+    "amenity/brewpub": {
+        "icon": "beer",
+        "inherits": ["amenity/restaurant"],
+        "fields": [
+        ],
+        "terms": [
+            "beer",
+            "brew"
+        ],
+        "tags": {
+            "amenity": "restaurant",
+            "microbrewery": "yes"
+        },
+        "name": "Brewpub"
+    },
+    "amenity/restaurant": {
+        "icon": "restaurant",
+        "inherits": ["amenity/hospitality"],
+        "fields": [
+            "cuisine",
+            "takeaway",
+            "delivery",
+            "drive_through",
+            "capacity"
+        ],
+	"priority": [
+		"cuisine"
+	],
+        "geometry": [
+            "point",
+            "area"
+        ],
+        "terms": [
+            "bar",
+            "breakfast",
+            "cafe",
+            "café",
+            "canteen",
+            "coffee",
+            "dine",
+            "dining",
+            "dinner",
+            "drive-in",
+            "eat",
+            "food",
+            "grill",
+            "lunch",
+            "table"
+        ],
+        "tags": {
+            "amenity": "restaurant"
+        },
+        "name": "Restaurant"
+    },
+    "amenity/fast_food": {
+        "icon": "fast-food",
+        "inherits": ["amenity/restaurant"],
+        "fields": [
+        ],
+        "tags": {
+            "amenity": "fast_food"
+        },
+        "terms": [
+            "restaurant"
+        ],
+        "name": "Fast Food"
+    },
+    "amenity/cafe": {
+        "icon": "cafe",
+        "inherits": ["amenity/restaurant"],
+        "fields": [
+        ],
+        "terms": [
+            "coffee",
+            "tea"
+        ],
+        "tags": {
+            "amenity": "cafe"
+        },
+        "name": "Cafe"
+    },
+    "amenity/events_venue": {
+        "icon": "restaurant",
+        "inherits": ["amenity/restaurant"],
+        "terms": [
+            "events",
+            "event",
+            "wedding",
+            "reunion",
+            "party",
+            "parties",
+            "group",
+            "groups"
+        ],
+        "tags": {
+            "amenity": "events_venue"
+        },
+        "name": "Events Venue"
+    },
+    "amenity/waste_disposal": {
+        "fields": [
+            "waste",
+            "access",
+            "fee",
+            "operator"
+        ],
+        "icon": "waste-basket",
+        "geometry": [
+            "point",
+            "vertex"
+        ],
+        "tags": {
+            "amenity": "waste_disposal"
+        },
+        "terms": [
+            "rubbish",
+            "litter",
+            "trash",
+            "garbage",
+            "dumster",
+            "dumpster",
+            "dump",
+            "bin"
+        ],
+        "name": "Waste Disposal Bin"
+    }
+}

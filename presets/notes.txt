@@ -1,0 +1,11 @@
+//"amenity/place_of_worship/hindu": "oc-hinduist",
+//"hunting-stand",
+//"ice-cream",
+// oc-power-wind
+// oc-prison
+// oc-shintoist
+// oc-sikhist
+// oc-taoist
+//"public_transport/stop_position": "oc-tram-stop",
+//oc-waterfall
+//oc-windmill

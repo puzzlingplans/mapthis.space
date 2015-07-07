@@ -1,0 +1,69 @@
+{
+    "address": {
+        "type": "address",
+        "keys": [
+            "addr:housename",
+            "addr:housenumber",
+            "addr:street",
+            "addr:city",
+            "addr:state",
+            "addr:postcode"
+        ]
+    },
+    "internet_access": {
+        "type": "check"
+    },
+    "microbrewery": {
+        "key": "microbrewery",
+        "type": "check",
+        "label": "Brews beer on premises?"
+    },
+    "opening_hours": {
+        "key": "opening_hours",
+        "type": "hours",
+        "label": "Operating hours",
+        "placeholder": "Mo-Sa 09:00-19:00; Su 12:00-17:00 ..."
+    },
+    "outdoor_seating": {
+        "key": "outdoor_seating",
+        "type": "check",
+        "label": "Outdoor seating"
+    },
+    "smoking": {
+        "type": "radio",
+        "strings": {
+            "options": {
+                "no": "No smoking",
+                "separated": "Allowed in separate area",
+                "isolated": null,
+                "outside": "Allowed outside",
+                "yes": "Allowed everywhere",
+                "dedicated": null
+            }
+        }
+    },
+    "takeaway": {
+        "type": "radio"
+    },
+    "waste": {
+        "label": "Type of Waste",
+        "key": "waste",
+        "type": "radio",
+        "strings": {
+            "options": {
+                "trash": "Trash/rubbish",
+                "oil": "Oil",
+                "drugs": "Medical waste",
+                "organic": "Compost or food waste",
+                "plastic": "Plastic",
+                "rubble": "Rubble",
+                "dog_excrement": "Dog excrement"
+            }
+        }
+    },
+    "access": {
+        "key": "access",
+        "type": "check",
+        "label": "Open to the public?"
+    }
+}

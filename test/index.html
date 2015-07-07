@@ -1,0 +1,48 @@
+<html>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<script src="../js/GPXBuilder.js"></script>
+
+<script src="../oauthinfo.js"></script>
+<script src="../js/osmauth.js"></script>
+
+<script src="../js/osm.js"></script>
+
+<body>
+<button id="testbtn">Test</button>
+</body>
+<script>
+
+$('#testbtn').click(function() {
+
+  localStorage.clear();
+  var tags = {'amenity':'bar','craft':'beer'};
+  
+  console.log(changesetNextSeq());
+
+  osmLogin(function() {
+
+    var obj = {
+    	type:'node',
+    	id:-1,
+    	lat:32.4,
+    	lon:-89.3,
+    	tags:{name:'test'},
+    };
+    changesetAddObject(obj);
+    var xml = changesetGetXML();
+    console.log((new XMLSerializer()).serializeToString(xml));
+    
+    osmUploadChanges();
+    
+    var gpx = new GPXBuilder();
+    for (var i=0; i<5; i++)
+	    gpx.addEvent({ latlng:{lat:32,lng:-84}, timestamp:218391231 });
+    gpx.simplify();
+    osmUploadTrack(gpx);
+  });
+
+});
+</script>
+</html>

@@ -1,0 +1,1165 @@
+{"value":"yes","count":127871448,"fraction":0.8415,"in_wiki":true,"description":""}
+{"value":"residential","count":31549980,"fraction":0.34700000000000003,"in_wiki":true,"description":"Road in a residential area"}
+{"value":"service","count":12718676,"fraction":0.1399,"in_wiki":true,"description":"Generally for access to a building, motorway service station, beach, campsite, industrial estate, business park, etc."}
+{"value":"house","count":12434415,"fraction":0.0818,"in_wiki":true,"description":"A single dwelling unit usually inhabited by one family."}
+{"value":"track","count":9680842,"fraction":0.10650000000000001,"in_wiki":true,"description":"Roads for agricultural and forestry use etc."}
+{"value":"stream","count":8410652,"fraction":0.7531,"in_wiki":true,"description":"A naturally-forming waterway that is too thin to be classed as a river."}
+{"value":"unclassified","count":8394305,"fraction":0.09230000000000001,"in_wiki":true,"description":"Public access road, non-residential."}
+{"value":"tower","count":7253539,"fraction":0.6838000000000001,"in_wiki":true,"description":"For towers or pylons carrying high voltage electricity cables. Normally constructed from steel latticework."}
+{"value":"water","count":6175038,"fraction":0.33,"in_wiki":true,"description":"Used to mark body of standing water, such as a lake or pond."}
+{"value":"footway","count":5117094,"fraction":0.0563,"in_wiki":true,"description":"Mainly residential paths designated for pedestrians only."}
+{"value":"tree","count":5024566,"fraction":0.2686,"in_wiki":true,"description":"A single tree, often significant."}
+{"value":"tertiary","count":3966770,"fraction":0.0436,"in_wiki":true,"description":"A road linking small settlements, or the local centres of a large town or city."}
+{"value":"path","count":3745481,"fraction":0.0412,"in_wiki":true,"description":"A generic multi-use path open to non-motorized vehicles."}
+{"value":"residential","count":3461080,"fraction":0.0228,"in_wiki":true,"description":"A general tag for a building used primarily for residential purposes."}
+{"value":"wood","count":2942387,"fraction":0.1573,"in_wiki":true,"description":"Forest. Sometimes considered to have restricted meaning \"Woodland with no forestry\"."}
+{"value":"forest","count":2658937,"fraction":0.19460000000000002,"in_wiki":true,"description":"Forest. Sometimes considered to have restricted meaning \"Managed woodland or woodland plantation\"."}
+{"value":"residential","count":2556377,"fraction":0.18710000000000002,"in_wiki":true,"description":"Predominantly houses or apartment buildings."}
+{"value":"secondary","count":2473695,"fraction":0.027200000000000002,"in_wiki":true,"description":"A highway linking large towns."}
+{"value":"pole","count":2360170,"fraction":0.2225,"in_wiki":true,"description":"Power line pole or small mast"}
+{"value":"grass","count":1728787,"fraction":0.1265,"in_wiki":true,"description":"A smaller area of mown and managed grass"}
+{"value":"parking","count":1718135,"fraction":0.21130000000000002,"in_wiki":true,"description":"A place for parking cars"}
+{"value":"farmland","count":1707826,"fraction":0.125,"in_wiki":true,"description":"Area of farmland used for tillage and pasture."}
+{"value":"primary","count":1666676,"fraction":0.0183,"in_wiki":true,"description":"A highway linking large towns."}
+{"value":"garage","count":1592985,"fraction":0.0105,"in_wiki":true,"description":"Denotes a single-owner private garage"}
+{"value":"fence","count":1552101,"fraction":0.30870000000000003,"in_wiki":true,"description":"A fence is a freestanding structure designed to restrict or prevent movement across a boundary. It is generally distinguished from a wall by the lightness of its construction."}
+{"value":"bus_stop","count":1524419,"fraction":0.016800000000000002,"in_wiki":true,"description":"A bus stop is a place where public buses stop."}
+{"value":"crossing","count":1504277,"fraction":0.0165,"in_wiki":true,"description":"Pedestrians can cross a street here - e.g. zebra crossing"}
+{"value":"meadow","count":1432682,"fraction":0.1048,"in_wiki":true,"description":"Wildflower Grassland where plants set seed"}
+{"value":"rail","count":1399406,"fraction":0.5028,"in_wiki":true,"description":"Full sized passenger or freight trains in the standard gauge for the country or state."}
+{"value":"turning_circle","count":1239048,"fraction":0.013600000000000001,"in_wiki":true,"description":"A widened area of road that allows vehicles to turn more easily."}
+{"value":"wall","count":1191185,"fraction":0.2369,"in_wiki":true,"description":"A wall is a freestanding structure, designed to restrict or prevent movement across a boundary, typically made from solid brick, concrete or rocks, and almost always built so that it is opaque to vision."}
+{"value":"apartments","count":1184207,"fraction":0.0078000000000000005,"in_wiki":true,"description":"A building arranged into individual dwellings, often on separate floors. May also have retail outlets on the ground floor."}
+{"value":"wetland","count":1129340,"fraction":0.0604,"in_wiki":true,"description":"The wetland tag is used for natural areas subject to inundation or with waterlogged ground"}
+{"value":"locality","count":1034047,"fraction":0.2852,"in_wiki":true,"description":"A named place that has no population."}
+{"value":"village","count":956749,"fraction":0.2639,"in_wiki":true,"description":"A settlement with between 1,000 and 10,000 inhabitants."}
+{"value":"hamlet","count":931525,"fraction":0.2569,"in_wiki":true,"description":"A settlement with less than 100-200 inhabitants."}
+{"value":"hut","count":890769,"fraction":0.0059,"in_wiki":true,"description":"A small and crude shelter."}
+{"value":"scrub","count":871927,"fraction":0.0466,"in_wiki":true,"description":"Uncultivated land covered with bushes or stunted trees."}
+{"value":"river","count":810577,"fraction":0.0726,"in_wiki":true,"description":"For the linear flow of a river, in flow direction."}
+{"value":"pitch","count":806204,"fraction":0.2954,"in_wiki":true,"description":"An area designed for playing a particular sport, normally designated with appropriate markings."}
+{"value":"coastline","count":806178,"fraction":0.0431,"in_wiki":true,"description":"Used to mark a coastline."}
+{"value":"gate","count":803133,"fraction":0.1598,"in_wiki":true,"description":"A section in a wall or fence which can be opened to allow access."}
+{"value":"cycleway","count":783324,"fraction":0.0086,"in_wiki":true,"description":"For designated cycleways."}
+{"value":"ditch","count":747909,"fraction":0.067,"in_wiki":true,"description":"Small man-made draining waterway, often found along roads."}
+{"value":"traffic_signals","count":733690,"fraction":0.0081,"in_wiki":true,"description":"A traffic signal for regulating circulation."}
+{"value":"industrial","count":699664,"fraction":0.0046,"in_wiki":true,"description":"A building where some industrial process takes place."}
+{"value":"trunk","count":690090,"fraction":0.0076,"in_wiki":true,"description":"Important roads that are not motorways."}
+{"value":"living_street","count":683419,"fraction":0.007500000000000001,"in_wiki":true,"description":"Road with very low speed limits and other pedestrian friendly traffic rules"}
+{"value":"place_of_worship","count":680967,"fraction":0.08370000000000001,"in_wiki":true,"description":"A place where religious services are conducted"}
+{"value":"school","count":653796,"fraction":0.0804,"in_wiki":true,"description":"Institution designed for learning under the supervision of teachers."}
+{"value":"farm","count":647946,"fraction":0.047400000000000005,"in_wiki":true,"description":"Area of farmland used for tillage and pasture."}
+{"value":"motorway","count":620212,"fraction":0.0068000000000000005,"in_wiki":true,"description":"High capacity highways designed to safely carry fast motor traffic."}
+{"value":"hedge","count":580543,"fraction":0.1155,"in_wiki":true,"description":"A hedge is a line of closely spaced shrubs and tree species, which form a barrier or mark the boundary of an area."}
+{"value":"steps","count":539059,"fraction":0.0059,"in_wiki":true,"description":"For flights of steps on footways."}
+{"value":"motorway_link","count":498300,"fraction":0.0055000000000000005,"in_wiki":true,"description":"The link roads (sliproads / ramps) leading to and from a motorway."}
+{"value":"yes","count":491961,"fraction":0.5998,"in_wiki":false,"description":""}
+{"value":"bench","count":486964,"fraction":0.0599,"in_wiki":true,"description":"A place for people to sit; allows room for several people."}
+{"value":"restaurant","count":483665,"fraction":0.059500000000000004,"in_wiki":true,"description":"Is for a generally formal place with sit-down facilities selling full meals served by waiters and often licensed (where allowed) to sell alcoholic drinks."}
+{"value":"swimming_pool","count":469446,"fraction":0.17200000000000001,"in_wiki":true,"description":"A place built for swimming"}
+{"value":"park","count":467025,"fraction":0.1711,"in_wiki":true,"description":"A park. Open, green area for recreation, usually municipal."}
+{"value":"street_lamp","count":463189,"fraction":0.0051,"in_wiki":true,"description":"A single pole with one or more lights to illuminate the street."}
+{"value":"farmyard","count":460239,"fraction":0.0337,"in_wiki":true,"description":"Area of land with farm buildings (farmhouse, dwellings, farmsteads, sheeds, stables, barns, equipment sheds, feed bunker)"}
+{"value":"drain","count":413853,"fraction":0.0371,"in_wiki":true,"description":"Artificial waterway used for carrying storm water or industrial discharge; or channelised stream."}
+{"value":"roof","count":401694,"fraction":0.0026000000000000003,"in_wiki":true,"description":"A roof open on at least two sides."}
+{"value":"level_crossing","count":390023,"fraction":0.1401,"in_wiki":true,"description":"A crossing between a railway and a road."}
+{"value":"pedestrian","count":370847,"fraction":0.0041,"in_wiki":true,"description":"For Roads , i.e. mainly / exclusively for pedestrians (often Shopping Areas)."}
+{"value":"peak","count":370770,"fraction":0.0198,"in_wiki":true,"description":"The top (summit) of a hill or mountain."}
+{"value":"industrial","count":339704,"fraction":0.024900000000000002,"in_wiki":true,"description":"Predominantly workshops, factories or warehouses"}
+{"value":"road","count":333787,"fraction":0.0037,"in_wiki":true,"description":"Road with unknown classification."}
+{"value":"reservoir","count":330957,"fraction":0.024200000000000003,"in_wiki":true,"description":"Ambiguous and better alternatives exist, see wiki."}
+{"value":"line","count":326160,"fraction":0.0307,"in_wiki":true,"description":"High-voltage power lines supported by towers or pylons."}
+{"value":"garages","count":305218,"fraction":0.002,"in_wiki":true,"description":"A block of private garages each with a separate owner"}
+{"value":"detached","count":291307,"fraction":0.0019,"in_wiki":true,"description":"A free-standing residential building usually housing a single-family."}
+{"value":"survey_point","count":289126,"fraction":0.1874,"in_wiki":true,"description":"Triangulation pillars, geodetic vertices, and fixed equipment used by topographers (e.g. DGPS radio stations)."}
+{"value":"riverbank","count":284143,"fraction":0.025400000000000002,"in_wiki":true,"description":"For tagging wide rivers which need to be defined by an area rather than just shown as a linear way."}
+{"value":"information","count":284130,"fraction":0.2833,"in_wiki":true,"description":"Information for tourists and visitors, including information offices"}
+{"value":"orchard","count":271913,"fraction":0.0199,"in_wiki":true,"description":"Used to mark intentional planting of trees or shrubs maintained for food production"}
+{"value":"playground","count":270597,"fraction":0.09910000000000001,"in_wiki":true,"description":"Marks a children's playground."}
+{"value":"garden","count":260418,"fraction":0.0954,"in_wiki":true,"description":"Place where flowers and other plants are grown in a decorative and structured manner or for scientific purposes."}
+{"value":"fuel","count":258211,"fraction":0.0318,"in_wiki":true,"description":"Used to mark filling stations"}
+{"value":"commercial","count":256886,"fraction":0.0017000000000000001,"in_wiki":true,"description":"A building where non-specific commercial activities take place."}
+{"value":"generator","count":247122,"fraction":0.0233,"in_wiki":true,"description":"A '''device''' converting kind of power to another."}
+{"value":"terrace","count":237646,"fraction":0.0016,"in_wiki":true,"description":"A single way used to define the outline of a linear row of residential dwellings, each of which normally has its own entrance, which form a terrace (\"row-house\" or \"townhouse\" in North American English)."}
+{"value":"trunk_link","count":235496,"fraction":0.0026000000000000003,"in_wiki":true,"description":""}
+{"value":"main","count":232678,"fraction":0.2837,"in_wiki":false,"description":""}
+{"value":"primary_link","count":222873,"fraction":0.0025,"in_wiki":true,"description":""}
+{"value":"convenience","count":219066,"fraction":0.132,"in_wiki":true,"description":"A convenience store. A small local shop carrying a small subset of the items you would find in a supermarket"}
+{"value":"cemetery","count":217111,"fraction":0.0159,"in_wiki":true,"description":"Used to mark a cemetery area"}
+{"value":"supermarket","count":215040,"fraction":0.1296,"in_wiki":true,"description":"A large store for groceries and other goods."}
+{"value":"canal","count":213780,"fraction":0.019100000000000002,"in_wiki":true,"description":"An large artificial open waterway, often used for transport purposes. Consider waterway=drain or waterway=ditch for smaller features."}
+{"value":"stop","count":204218,"fraction":0.0022,"in_wiki":true,"description":"Used to mark stop signs"}
+{"value":"cliff","count":198416,"fraction":0.0106,"in_wiki":true,"description":"A vertical or almost vertical natural drop in terrain, usually with a bare rock surface."}
+{"value":"shed","count":198185,"fraction":0.0013000000000000002,"in_wiki":true,"description":"A small, simple structure used as storage or workshop"}
+{"value":"bollard","count":197193,"fraction":0.0392,"in_wiki":true,"description":"Solid (usually concrete or metal) pillar or pillars in the middle of the road to prevent passage by some traffic."}
+{"value":"vineyard","count":195566,"fraction":0.0143,"in_wiki":true,"description":"Used to tag vineyards, a piece of land where grapes are grown."}
+{"value":"pier","count":194925,"fraction":0.1263,"in_wiki":true,"description":"A pier is a raised walkway over water, supported by widely spread piles or pillars."}
+{"value":"school","count":186900,"fraction":0.0012000000000000001,"in_wiki":true,"description":"A generic school building."}
+{"value":"bank","count":180511,"fraction":0.0222,"in_wiki":true,"description":"Shows the location of a bank branch."}
+{"value":"post_box","count":179768,"fraction":0.0221,"in_wiki":true,"description":"Used to mark the location of a postbox."}
+{"value":"hotel","count":177140,"fraction":0.1766,"in_wiki":true,"description":"Used to tag a hotel."}
+{"value":"fast_food","count":177059,"fraction":0.0218,"in_wiki":true,"description":"Is for a place concentrating on very fast counter-only service and take-away food."}
+{"value":"cafe","count":177054,"fraction":0.0218,"in_wiki":true,"description":"Generally informal place with sit-down facilities selling beverages and light meals and/or snacks."}
+{"value":"retail","count":168082,"fraction":0.0011,"in_wiki":true,"description":"A building primarily used for selling goods to the general public."}
+{"value":"isolated_dwelling","count":167484,"fraction":0.046200000000000005,"in_wiki":true,"description":"The smallest kind of settlement (1-2 households)"}
+{"value":"tower","count":163326,"fraction":0.1058,"in_wiki":true,"description":"A tower is a building, which is multiple times higher than its diameter"}
+{"value":"grave_yard","count":160503,"fraction":0.019700000000000002,"in_wiki":true,"description":"To mark places where people, or sometimes animals are buried which is close to a place of worship."}
+{"value":"guidepost","count":154312,"fraction":0.5665,"in_wiki":true,"description":"Used to mark a guidepost/signpost"}
+{"value":"grassland","count":151880,"fraction":0.0081,"in_wiki":true,"description":"Natural areas where the vegetation is dominated by grasses (Poaceae) and other herbaceous (non-woody) plants."}
+{"value":"farm_auxiliary","count":150563,"fraction":0.001,"in_wiki":true,"description":"A building on a farm that is not a dwelling."}
+{"value":"rock","count":148751,"fraction":0.008,"in_wiki":true,"description":"A notable rock or group of rocks, with at least one of them firmly attached to the underlying bedrock. See wiki for history and other meanings."}
+{"value":"island","count":147336,"fraction":0.040600000000000004,"in_wiki":true,"description":"An island is any piece of land that is completely surrounded by water and isolated from other significant landmasses."}
+{"value":"secondary_link","count":146054,"fraction":0.0016,"in_wiki":true,"description":""}
+{"value":"abandoned","count":144859,"fraction":0.052000000000000005,"in_wiki":true,"description":"abandoned rails; track has been removed and the line may have been reused or left to decay"}
+{"value":"heath","count":144081,"fraction":0.0077,"in_wiki":true,"description":"A dwarf-shrub habitat, characterised by open, low growing woody vegetation, often dominated by plants of the Ericaceae."}
+{"value":"recycling","count":143223,"fraction":0.0176,"in_wiki":true,"description":"Container or centre where you can take waste for recycling."}
+{"value":"allotments","count":141277,"fraction":0.0103,"in_wiki":true,"description":"An allotment site."}
+{"value":"pharmacy","count":138599,"fraction":0.017,"in_wiki":true,"description":"A shop where a pharmacist sells medications"}
+{"value":"kindergarten","count":137514,"fraction":0.016900000000000002,"in_wiki":true,"description":"A place for looking after preschool children and (typically) giving early education."}
+{"value":"lift_gate","count":137352,"fraction":0.0273,"in_wiki":true,"description":"A lift gate (boom barrier) is a bar, or pole pivoted in such a way as to allow the boom to block vehicular access through a controlled point."}
+{"value":"commercial","count":132078,"fraction":0.0097,"in_wiki":true,"description":"Commercial zone - predominantly offices, business parks, etc."}
+{"value":"church","count":129314,"fraction":0.0009000000000000001,"in_wiki":true,"description":"A building that was built as a church."}
+{"value":"basin","count":128725,"fraction":0.0094,"in_wiki":true,"description":"An area of land artificially graded to hold water."}
+{"value":"minor_line","count":126874,"fraction":0.012,"in_wiki":true,"description":"Minor power cables, supported by poles and not towers/pylons."}
+{"value":"hospital","count":123717,"fraction":0.0152,"in_wiki":true,"description":"Used to mark a hospital. Image shows mapnik rendering"}
+{"value":"bicycle_parking","count":123090,"fraction":0.0151,"in_wiki":true,"description":"A place for parking bicycles."}
+{"value":"motorway_junction","count":118045,"fraction":0.0013000000000000002,"in_wiki":true,"description":"An exit from a motorway or other major road."}
+{"value":"waste_basket","count":116867,"fraction":0.014400000000000001,"in_wiki":true,"description":"A single small container for depositing garbage that is easily accesible for pedestrians."}
+{"value":"cutline","count":116581,"fraction":0.0755,"in_wiki":true,"description":"Used to mark cut lines in forests."}
+{"value":"post_office","count":116380,"fraction":0.0143,"in_wiki":true,"description":"A place where letters and parcels may be sent or collected."}
+{"value":"storage_tank","count":115988,"fraction":0.0752,"in_wiki":true,"description":"A large holding tank, typically cylindrical."}
+{"value":"switch","count":114934,"fraction":0.0413,"in_wiki":true,"description":"Connections between railways"}
+{"value":"sports_centre","count":114896,"fraction":0.042100000000000005,"in_wiki":true,"description":"A distinct facility where a range of sports take place within an enclosed area."}
+{"value":"pub","count":112730,"fraction":0.013900000000000001,"in_wiki":true,"description":"A pub"}
+{"value":"tree_row","count":112584,"fraction":0.006,"in_wiki":true,"description":"A line of trees"}
+{"value":"toilets","count":112299,"fraction":0.013800000000000002,"in_wiki":true,"description":"Publicly accessible toilets"}
+{"value":"shelter","count":112120,"fraction":0.013800000000000002,"in_wiki":true,"description":"Small place to protect against bad weather conditions"}
+{"value":"dam","count":111365,"fraction":0.01,"in_wiki":true,"description":"A wall built across a river or stream to impound the water. A dam normally does not have water flowing over the top of it."}
+{"value":"taxiway","count":110317,"fraction":0.38980000000000004,"in_wiki":true,"description":"Where airplanes manouevre between runways and parking areas."}
+{"value":"public_building","count":107763,"fraction":0.013300000000000001,"in_wiki":true,"description":"Used to mark a public building."}
+{"value":"quarry","count":107521,"fraction":0.0079,"in_wiki":true,"description":"Surface mineral extraction"}
+{"value":"substation","count":106919,"fraction":0.010100000000000001,"in_wiki":true,"description":"Power substation."}
+{"value":"give_way","count":103259,"fraction":0.0011,"in_wiki":true,"description":"Used to mark give way signs (also known as yield signs)"}
+{"value":"retail","count":102375,"fraction":0.007500000000000001,"in_wiki":true,"description":"Predominantly shops"}
+{"value":"clothes","count":100056,"fraction":0.0603,"in_wiki":true,"description":"A shop to get clothes"}
+{"value":"tertiary_link","count":98820,"fraction":0.0011,"in_wiki":true,"description":""}
+{"value":"greenhouse","count":96868,"fraction":0.0006000000000000001,"in_wiki":true,"description":"A building in which plants are grown"}
+{"value":"memorial","count":96269,"fraction":0.2099,"in_wiki":true,"description":"Small memorials, usually remembering special persons, people who lost their lives in the wars"}
+{"value":"drinking_water","count":93434,"fraction":0.0115,"in_wiki":true,"description":"Drinking water is a place where humans can obtain potable water for consumption. Typically, the water is used for only drinking. Also known as a drinking fountain or bubbler."}
+{"value":"barn","count":92041,"fraction":0.0006000000000000001,"in_wiki":true,"description":"An agricultural building used for storage and as a covered workplace."}
+{"value":"station","count":90812,"fraction":0.032600000000000004,"in_wiki":true,"description":"A railway station"}
+{"value":"telephone","count":90480,"fraction":0.0111,"in_wiki":true,"description":"A Public telephone"}
+{"value":"bare_rock","count":89695,"fraction":0.0048000000000000004,"in_wiki":true,"description":"For areas of solid visible bedrock."}
+{"value":"buffer_stop","count":88798,"fraction":0.031900000000000005,"in_wiki":true,"description":""}
+{"value":"suburb","count":88009,"fraction":0.024300000000000002,"in_wiki":true,"description":"A part of a town or city with a well-known name and often a distinct identity."}
+{"value":"beach","count":87654,"fraction":0.0047,"in_wiki":true,"description":"Area of shore which is fairly open, slopes smoothly to the water, and is free of trees"}
+{"value":"construction","count":87539,"fraction":0.0006000000000000001,"in_wiki":true,"description":"A building under construction"}
+{"value":"town","count":87306,"fraction":0.0241,"in_wiki":true,"description":"An important urban centre, between a village and a city in size."}
+{"value":"bakery","count":86214,"fraction":0.0519,"in_wiki":true,"description":"A shop selling bread."}
+{"value":"service","count":86023,"fraction":0.0006000000000000001,"in_wiki":true,"description":"Service building usually is a small umanned building with certain machinery (like pumps or transformers)."}
+{"value":"retaining_wall","count":85486,"fraction":0.017,"in_wiki":true,"description":"A retaining wall is a structure that holds back soil or rock from a building, structure or area. Retaining walls prevent downslope movement or erosion and provide support for vertical or near-vertical grade changes. Right side is bottom, left side is top"}
+{"value":"construction","count":84351,"fraction":0.0009000000000000001,"in_wiki":true,"description":""}
+{"value":"atm","count":84060,"fraction":0.0103,"in_wiki":true,"description":"A device that provides the clients of a financial institution with access to financial transactions."}
+{"value":"hairdresser","count":83568,"fraction":0.050300000000000004,"in_wiki":true,"description":"A hairdressers shop where you can get your hair cut"}
+{"value":"attraction","count":83032,"fraction":0.0828,"in_wiki":true,"description":"A general tourist attraction."}
+{"value":"viewpoint","count":79955,"fraction":0.07970000000000001,"in_wiki":true,"description":"A place worth visiting, often high, with a good view of surrounding countryside or notable buildings."}
+{"value":"farm","count":79133,"fraction":0.0005,"in_wiki":true,"description":"A residential building on a farm (farmhouse)."}
+{"value":"bar","count":78318,"fraction":0.009600000000000001,"in_wiki":true,"description":"A location for 'party' drinking"}
+{"value":"picnic_site","count":77927,"fraction":0.0777,"in_wiki":true,"description":"A picnic site"}
+{"value":"platform","count":77297,"fraction":0.027800000000000002,"in_wiki":true,"description":"A railway or bus platform."}
+{"value":"works","count":77169,"fraction":0.05,"in_wiki":true,"description":"Industrial production plant aka factory"}
+{"value":"manufacture","count":77060,"fraction":0.0005,"in_wiki":true,"description":""}
+{"value":"fire_station","count":75636,"fraction":0.009300000000000001,"in_wiki":true,"description":"Used to mark a fire station."}
+{"value":"police","count":75216,"fraction":0.0092,"in_wiki":true,"description":"Used to mark a police station."}
+{"value":"tram","count":73891,"fraction":0.026500000000000003,"in_wiki":true,"description":"Tram rails or tracks"}
+{"value":"car_repair","count":70297,"fraction":0.0424,"in_wiki":true,"description":"Business where cars are repaired."}
+{"value":"cabin","count":70197,"fraction":0.0005,"in_wiki":true,"description":"A small, roughly built house typically found in rural areas."}
+{"value":"village_green","count":69325,"fraction":0.0051,"in_wiki":true,"description":"A village green is a distinctive part of a village centre; [[wiktionary:village green]], [[wikipedia:Village green]]"}
+{"value":"townhall","count":68810,"fraction":0.0085,"in_wiki":true,"description":"A building where the administration of a village, town or city may be located, or it may just serve as a community meeting place."}
+{"value":"parking_space","count":68599,"fraction":0.008400000000000001,"in_wiki":true,"description":"A single parking space on a parking lot"}
+{"value":"land","count":67510,"fraction":0.0036000000000000003,"in_wiki":true,"description":"land within a water body. Redundant tag, should no longer be used."}
+{"value":"sand","count":65679,"fraction":0.0035,"in_wiki":true,"description":"An area covered by sand with no or very little vegetation"}
+{"value":"hunting_stand","count":65657,"fraction":0.0081,"in_wiki":true,"description":"Hunting stands are open or enclosed platforms used by hunters to place themselves at an elevated height above the terrain."}
+{"value":"neighbourhood","count":65393,"fraction":0.018000000000000002,"in_wiki":true,"description":"A neighbourhood is a smaller named, geographically localised place within a suburb of a larger city or within a town or village"}
+{"value":"sub_station","count":65118,"fraction":0.0061,"in_wiki":true,"description":"Deprecated tag for substation"}
+{"value":"construction","count":64679,"fraction":0.0047,"in_wiki":true,"description":"An area being built on."}
+{"value":"bridleway","count":62983,"fraction":0.0007,"in_wiki":true,"description":"A way intended for use by equestrians."}
+{"value":"pipeline","count":62547,"fraction":0.0405,"in_wiki":true,"description":"A tag for major pipelines - gas, water, oil, etc."}
+{"value":"crossing","count":62087,"fraction":0.0223,"in_wiki":true,"description":"Pedestrians can cross a railway here"}
+{"value":"House","count":61861,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"islet","count":61347,"fraction":0.016900000000000002,"in_wiki":true,"description":"A very small island."}
+{"value":"disused","count":60905,"fraction":0.0219,"in_wiki":true,"description":"railway which present but no longer used"}
+{"value":"platform","count":60706,"fraction":0.0007,"in_wiki":true,"description":"A platform of a bus station."}
+{"value":"spring","count":60645,"fraction":0.0032,"in_wiki":true,"description":"A spring is a point where water naturally surfaces"}
+{"value":"warehouse","count":60419,"fraction":0.0004,"in_wiki":true,"description":"A commercial building for storage of goods."}
+{"value":"board","count":59913,"fraction":0.22,"in_wiki":true,"description":"An information board"}
+{"value":"camp_site","count":59171,"fraction":0.059000000000000004,"in_wiki":true,"description":"Used to mark a campsite / campground."}
+{"value":"vending_machine","count":58903,"fraction":0.007200000000000001,"in_wiki":true,"description":"A machine to vend goods, tickets and so on"}
+{"value":"collapsed","count":58233,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"wayside_cross","count":57994,"fraction":0.1265,"in_wiki":true,"description":"A historical cross, symbol of christian faith."}
+{"value":"fountain","count":54556,"fraction":0.0067,"in_wiki":true,"description":"A fountain for cultural / decorational / recreational purposes."}
+{"value":"car","count":54546,"fraction":0.0329,"in_wiki":true,"description":"A shop for cars"}
+{"value":"nature_reserve","count":54534,"fraction":0.02,"in_wiki":true,"description":"Protected area of importance for wildlife, flora, fauna or features of geological or other special interest."}
+{"value":"stile","count":54016,"fraction":0.010700000000000001,"in_wiki":true,"description":"A structure which provides people a passage through or over a boundary via steps, ladders or narrow gaps."}
+{"value":"office","count":53575,"fraction":0.0004,"in_wiki":true,"description":""}
+{"value":"cycle_barrier","count":53100,"fraction":0.0106,"in_wiki":true,"description":"Barriers along paths that slow or prevent access for bicycle users."}
+{"value":"entrance","count":52794,"fraction":0.00030000000000000003,"in_wiki":true,"description":"To mark the location of a building entrance."}
+{"value":"staircase","count":51806,"fraction":0.0632,"in_wiki":true,"description":"Door to staircase"}
+{"value":"library","count":51774,"fraction":0.0064,"in_wiki":true,"description":"Used to mark a library."}
+{"value":"mini_roundabout","count":51554,"fraction":0.0006000000000000001,"in_wiki":true,"description":"A road junction where the traffic goes around a painted circle or traversable island and has right of way."}
+{"value":"museum","count":51321,"fraction":0.0512,"in_wiki":true,"description":"A museum."}
+{"value":"guest_house","count":50684,"fraction":0.0505,"in_wiki":true,"description":"Guest House and Bed&Breakfast"}
+{"value":"ruins","count":50638,"fraction":0.11040000000000001,"in_wiki":true,"description":"Remains of structures that were once complete, but have fallen into partial or complete disrepair."}
+{"value":"proposed","count":49485,"fraction":0.0005,"in_wiki":true,"description":""}
+{"value":"milestone","count":49325,"fraction":0.0005,"in_wiki":true,"description":"A stone or metal marker on the side of a road denoting the reference and distance travelled."}
+{"value":"garages","count":48908,"fraction":0.0036000000000000003,"in_wiki":true,"description":"Denotes areas occupied by multiple private garage buildings"}
+{"value":"common","count":48881,"fraction":0.0179,"in_wiki":true,"description":"?????"}
+{"value":"brownfield","count":48118,"fraction":0.0035,"in_wiki":true,"description":"Land scheduled for new development"}
+{"value":"swimming_pool","count":47295,"fraction":0.0058000000000000005,"in_wiki":true,"description":"A place built for swimming"}
+{"value":"kiosk","count":46568,"fraction":0.0281,"in_wiki":true,"description":"A small shop on the pavement that sells magazines, tobacco, newspapers, sweets and stamps."}
+{"value":"Residential","count":46388,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"doctors","count":45943,"fraction":0.0056,"in_wiki":true,"description":"A Doctor's Office is a place you can go to get medical attention or a check up."}
+{"value":"regional","count":45745,"fraction":0.1296,"in_wiki":false,"description":""}
+{"value":"water_tower","count":45570,"fraction":0.029500000000000002,"in_wiki":true,"description":"An elevated storage container for drinking water."}
+{"value":"yes","count":44844,"fraction":0.0089,"in_wiki":true,"description":""}
+{"value":"recreation_ground","count":44783,"fraction":0.0033,"in_wiki":true,"description":"An open green space for general recreation, which often includes formal or informal pitches, nets and so on. Often municipally owned, sometimes part of colleges / companies or commecially operated."}
+{"value":"track","count":44443,"fraction":0.016300000000000002,"in_wiki":true,"description":"A race track for running, cycling and other non-motorised sports such as horses, greyhounds."}
+{"value":"aerodrome","count":44080,"fraction":0.1557,"in_wiki":true,"description":"An Aerodrome (UK), Airport (US)"}
+{"value":"rapids","count":43669,"fraction":0.0039000000000000003,"in_wiki":true,"description":""}
+{"value":"entrance","count":43037,"fraction":0.0086,"in_wiki":true,"description":"An opening or gap in a barrier."}
+{"value":"weir","count":42902,"fraction":0.0038,"in_wiki":true,"description":"A barrier built across a river, sometimes to divert water for industrial purposes. Water can still flow over the top."}
+{"value":"civic","count":42495,"fraction":0.00030000000000000003,"in_wiki":true,"description":"A building hosting any civic amenity (town hall, library, swimming pool)."}
+{"value":"tram_stop","count":40322,"fraction":0.0145,"in_wiki":true,"description":"A tram stop is a place where a passenger can embark / disembark a tram."}
+{"value":"university","count":39807,"fraction":0.0049,"in_wiki":true,"description":"An educational institution designed for instruction, examination, or both, of students in many branches of advanced learning."}
+{"value":"water_well","count":37710,"fraction":0.0244,"in_wiki":true,"description":"A water well is an excavation or structure created in the ground by digging, driving, boring or drilling to access groundwater  in underground aquifers."}
+{"value":"bay","count":37673,"fraction":0.002,"in_wiki":true,"description":"Area of water mostly surrounded by land."}
+{"value":"hangar","count":37643,"fraction":0.0002,"in_wiki":true,"description":"A hangar is a building used for the storage of airplanes, helicopters or space-craft."}
+{"value":"yes","count":37552,"fraction":0.022600000000000002,"in_wiki":true,"description":"An shop of unspecified type."}
+{"value":"social_facility","count":37403,"fraction":0.0046,"in_wiki":true,"description":"A facility that provides social services"}
+{"value":"block","count":36592,"fraction":0.0073,"in_wiki":true,"description":"Large immobile block(s) barring free access along a way."}
+{"value":"archaeological_site","count":36147,"fraction":0.07880000000000001,"in_wiki":true,"description":"a place in which evidence of past activity is preserved"}
+{"value":"silo","count":35993,"fraction":0.0233,"in_wiki":true,"description":"A storage container for bulk material, often grains such as corn or wheat"}
+{"value":"monument","count":35779,"fraction":0.078,"in_wiki":true,"description":"A memorial object, especially large and made of stone, built to remember, show respect to a person or group of people or to commemorate an event."}
+{"value":"kerb","count":35296,"fraction":0.007,"in_wiki":true,"description":"Kerb limiting the passage of vehicles."}
+{"value":"doityourself","count":35193,"fraction":0.0212,"in_wiki":true,"description":"A ''Do-it-Yourself''-store offers supplies for doing things yourself - household repairs and improvements, making things from wood and other materials."}
+{"value":"pizza","count":35186,"fraction":0.09970000000000001,"in_wiki":false,"description":""}
+{"value":"stadium","count":34849,"fraction":0.0128,"in_wiki":true,"description":"Major sports facility with substantial tiered seating."}
+{"value":"artwork","count":34789,"fraction":0.0347,"in_wiki":true,"description":"Used to tag public pieces of art."}
+{"value":"car_wash","count":34330,"fraction":0.004200000000000001,"in_wiki":true,"description":"A place where you can wash your car."}
+{"value":"wastewater_plant","count":34230,"fraction":0.0222,"in_wiki":true,"description":"Facilities used to treat wastewater."}
+{"value":"runway","count":33803,"fraction":0.1194,"in_wiki":true,"description":"A strip of land kept clear and set aside for airplanes to take off from and land on."}
+{"value":"public","count":33772,"fraction":0.0002,"in_wiki":true,"description":"A building accessible to general public (town hall, police station, court house)."}
+{"value":"university","count":33591,"fraction":0.0002,"in_wiki":true,"description":"An university building."}
+{"value":"burger","count":32901,"fraction":0.0932,"in_wiki":false,"description":""}
+{"value":"butcher","count":32151,"fraction":0.0194,"in_wiki":true,"description":"Used to mark a butcher."}
+{"value":"surveillance","count":32043,"fraction":0.020800000000000003,"in_wiki":true,"description":"To mark places and buildings monitored by public or private camera."}
+{"value":"florist","count":31237,"fraction":0.0188,"in_wiki":true,"description":"Shop selling bouquets of flowers"}
+{"value":"yes","count":31160,"fraction":0.068,"in_wiki":true,"description":""}
+{"value":"college","count":31132,"fraction":0.0038,"in_wiki":true,"description":"A place for further education usually a post-secondary education institution"}
+{"value":"map","count":30967,"fraction":0.11370000000000001,"in_wiki":true,"description":"A board with a map"}
+{"value":"petroleum_well","count":30383,"fraction":0.019700000000000002,"in_wiki":true,"description":"A boring through the earth's surface that is designed to find and acquire petroleum oil"}
+{"value":"scree","count":30173,"fraction":0.0016,"in_wiki":true,"description":"An accumulation of loose angular rocks"}
+{"value":"subway","count":30112,"fraction":0.0108,"in_wiki":true,"description":"city passenger rail service"}
+{"value":"mall","count":29842,"fraction":0.018000000000000002,"in_wiki":true,"description":"A group of stores, typically associated with a single building structure."}
+{"value":"wayside_shrine","count":29651,"fraction":0.06470000000000001,"in_wiki":true,"description":"Historical shrine often showing a religious depiction."}
+{"value":"bus_station","count":28985,"fraction":0.0036000000000000003,"in_wiki":true,"description":"A \"bus stop\" would be a place on a particular bus route where the bus regularly stops to pick up / drop off passengers."}
+{"value":"halt","count":28901,"fraction":0.010400000000000001,"in_wiki":true,"description":"A place along a railway line where trains stop. It's not a station because it has not switches."}
+{"value":"toll_booth","count":28619,"fraction":0.0057,"in_wiki":true,"description":"A place where a road usage toll or fee is collected."}
+{"value":"farm","count":28289,"fraction":0.0078000000000000005,"in_wiki":true,"description":"Individually named farm (but not isolated}."}
+{"value":"recreation_ground","count":28167,"fraction":0.0103,"in_wiki":true,"description":""}
+{"value":"glacier","count":27968,"fraction":0.0015,"in_wiki":true,"description":"A permanent body of ice formed naturally from snow that is moving under its own weight."}
+{"value":"marketplace","count":27874,"fraction":0.0034000000000000002,"in_wiki":true,"description":"A place where trade is regulated."}
+{"value":"signal","count":27827,"fraction":0.01,"in_wiki":true,"description":"railway signal"}
+{"value":"golf_course","count":27339,"fraction":0.01,"in_wiki":true,"description":"A place or area where you can play golf."}
+{"value":"italian","count":27253,"fraction":0.0772,"in_wiki":false,"description":""}
+{"value":"helipad","count":27236,"fraction":0.09620000000000001,"in_wiki":true,"description":"A place where helicopters can land (an heliport or helipad)."}
+{"value":"dentist","count":26940,"fraction":0.0033,"in_wiki":true,"description":"A dentist practice / surgery."}
+{"value":"pylon","count":26455,"fraction":0.3715,"in_wiki":true,"description":"A pylon supporting the aerialway cable."}
+{"value":"community_centre","count":26332,"fraction":0.0032,"in_wiki":true,"description":"A place mostly used for local events, festivities and group activities."}
+{"value":"ridge","count":26256,"fraction":0.0014,"in_wiki":true,"description":"Used to tag a mountain or hill ridge"}
+{"value":"narrow_gauge","count":25996,"fraction":0.009300000000000001,"in_wiki":true,"description":"Passenger or freight trains on narrower tracks than the standard gauge for the country or state."}
+{"value":"waste_disposal","count":25650,"fraction":0.0032,"in_wiki":true,"description":"A medium size disposal bin. For the material accepted see the waste tag."}
+{"value":"transformer","count":25588,"fraction":0.0024000000000000002,"in_wiki":true,"description":"Power transformer"}
+{"value":"greenfield","count":25311,"fraction":0.0019,"in_wiki":true,"description":"Undeveloped land scheduled to turn into a construction site"}
+{"value":"conservation","count":25278,"fraction":0.0018000000000000002,"in_wiki":true,"description":""}
+{"value":"castle","count":24987,"fraction":0.0545,"in_wiki":true,"description":"A fortified building in medieval and modern times"}
+{"value":"furniture","count":23980,"fraction":0.014400000000000001,"in_wiki":true,"description":"Shop selling furniture."}
+{"value":"hospital","count":23732,"fraction":0.0002,"in_wiki":true,"description":"A building which forms part of a hospital."}
+{"value":"bicycle","count":23497,"fraction":0.0142,"in_wiki":true,"description":"A store where you can buy and/or repair your bike and buy accessories."}
+{"value":"company","count":23244,"fraction":0.1933,"in_wiki":true,"description":"the office of a private company"}
+{"value":"military","count":22968,"fraction":0.0017000000000000001,"in_wiki":true,"description":"Area used for military purposes"}
+{"value":"static_caravan","count":22899,"fraction":0.0002,"in_wiki":true,"description":"A mobile home (caravan) (semi)permanently left on a single site."}
+{"value":"station","count":22429,"fraction":0.0021000000000000003,"in_wiki":true,"description":"Deprecated tag for substation"}
+{"value":"greenhouse_horticulture","count":22149,"fraction":0.0016,"in_wiki":true,"description":"Land area used for growing plants in greenhouses."}
+{"value":"alcohol","count":22056,"fraction":0.013300000000000001,"in_wiki":true,"description":"Shop selling alcoholic drinks"}
+{"value":"cattle_grid","count":21967,"fraction":0.0044,"in_wiki":true,"description":"A hole in the road surface covered in a series of bars that allow wheeled vehicles but not animals to cross."}
+{"value":"apron","count":21341,"fraction":0.07540000000000001,"in_wiki":true,"description":"An '''apron''' is the surfaced part of an airport where planes park."}
+{"value":"chimney","count":21327,"fraction":0.013800000000000002,"in_wiki":true,"description":"A tall distinctive vertical conduit for venting hot gases or smoke, normally found near power stations or large factories"}
+{"value":"shoes","count":21290,"fraction":0.0128,"in_wiki":true,"description":"Shop selling shoes."}
+{"value":"books","count":21205,"fraction":0.0128,"in_wiki":true,"description":"A shop selling books"}
+{"value":"speed_camera","count":20950,"fraction":0.0002,"in_wiki":true,"description":"A fixed road-side or overhead speed camera"}
+{"value":"station","count":20884,"fraction":0.2933,"in_wiki":true,"description":"A station where passengers can enter and/or leave the aerialway"}
+{"value":"theatre","count":20710,"fraction":0.0025,"in_wiki":true,"description":"Place where live theatrical performances are held."}
+{"value":"electronics","count":20540,"fraction":0.012400000000000001,"in_wiki":true,"description":"Shop selling consumer electronics (TV, radio, fridge)"}
+{"value":"taxi","count":20499,"fraction":0.0025,"in_wiki":true,"description":"A place where taxis wait for passengers. Often found at airports, hotels, railway/bus/subway stations, large shopping centers..."}
+{"value":"railway","count":20416,"fraction":0.0015,"in_wiki":true,"description":"for marshalling yards and sidings, railway sheds, bits of grass with old rails and hardware strewn around, train washes, etc..."}
+{"value":"chalet","count":20382,"fraction":0.020300000000000002,"in_wiki":true,"description":"Detached cottages with self-contained cooking/bathroom/toilet facilities"}
+{"value":"slipway","count":20203,"fraction":0.0074,"in_wiki":true,"description":"A slipway is a ramp into the water for launching a boat."}
+{"value":"subway_entrance","count":20095,"fraction":0.007200000000000001,"in_wiki":true,"description":"The entrance point of a subway"}
+{"value":"city","count":20027,"fraction":0.0055000000000000005,"in_wiki":true,"description":"The largest urban settlement or settlements within the territory."}
+{"value":"motel","count":19929,"fraction":0.0199,"in_wiki":true,"description":"Short term accommodation, particularly for people travelling by car."}
+{"value":"government","count":19869,"fraction":0.1653,"in_wiki":true,"description":"An office of a government agency or department."}
+{"value":"artificial","count":19828,"fraction":0.0018000000000000002,"in_wiki":false,"description":""}
+{"value":"light_rail","count":19816,"fraction":0.0071,"in_wiki":true,"description":"A higher-standard tram system, normally in its own right-of-way."}
+{"value":"kissing_gate","count":19244,"fraction":0.0038,"in_wiki":true,"description":"A section in a wall or fence which can be opened to allow restricted access."}
+{"value":"semidetached_house","count":19234,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"chapel","count":18965,"fraction":0.0001,"in_wiki":true,"description":""}
+{"value":"chinese","count":18864,"fraction":0.053500000000000006,"in_wiki":false,"description":""}
+{"value":"department_store","count":18767,"fraction":0.011300000000000001,"in_wiki":true,"description":"A large store with multiple clothing and other general merchandise departments."}
+{"value":"damaged","count":18740,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"hardware","count":18727,"fraction":0.011300000000000001,"in_wiki":true,"description":"A shop which sells timber, tools and other building products"}
+{"value":"city_wall","count":18493,"fraction":0.0037,"in_wiki":true,"description":"A city wall, a fortification used to defend settlements in ancient to modern times"}
+{"value":"groyne","count":18132,"fraction":0.0117,"in_wiki":true,"description":"A rigid structure built from a shoreline or riverbank that interrupts water flow and limits the movement of sediment"}
+{"value":"cave_entrance","count":17729,"fraction":0.0009000000000000001,"in_wiki":true,"description":"The entrance to a cave."}
+{"value":"hotel","count":17490,"fraction":0.0001,"in_wiki":true,"description":""}
+{"value":"marina","count":17401,"fraction":0.0064,"in_wiki":true,"description":"For mooring leisure yachts and motor boats"}
+{"value":"milestone","count":17394,"fraction":0.006200000000000001,"in_wiki":true,"description":"A stone or metal marker along a railway denoting the distance traveled."}
+{"value":"cinema","count":17305,"fraction":0.0021000000000000003,"in_wiki":true,"description":"Cinema/movie theater - place for showing movies."}
+{"value":"landfill","count":17134,"fraction":0.0013000000000000002,"in_wiki":true,"description":"Where waste is collected, sorted or covered over"}
+{"value":"ditch","count":17101,"fraction":0.0034000000000000002,"in_wiki":true,"description":"A man made ditch or trench to prevent access to the other side."}
+{"value":"parking_entrance","count":17076,"fraction":0.0021000000000000003,"in_wiki":true,"description":"A entrance to an underground or multi storey parking facility"}
+{"value":"jewelry","count":16997,"fraction":0.0102,"in_wiki":true,"description":"Shop that sells rings, necklaces, earrings, watches, etc."}
+{"value":"clinic","count":16987,"fraction":0.0021000000000000003,"in_wiki":true,"description":"Medium-sized medical centres with tens of staff; smaller than a hospital and larger than a doctor's practice."}
+{"value":"hostel","count":16725,"fraction":0.0167,"in_wiki":true,"description":"Cheap accommodation with shared bedrooms."}
+{"value":"emergency_access_point","count":16546,"fraction":0.0002,"in_wiki":true,"description":"Sign number which can be used to define you current position in case of an emergency"}
+{"value":"beauty","count":16254,"fraction":0.0098,"in_wiki":true,"description":"A non-hairdresser beauty shop, spa, nail salon, etc."}
+{"value":"optician","count":16037,"fraction":0.0097,"in_wiki":true,"description":"A shop that sells, fits, and repairs prescription eyeglasses and contact lenses."}
+{"value":"embankment","count":15882,"fraction":0.0103,"in_wiki":true,"description":"An embankment."}
+{"value":"mobile_phone","count":15769,"fraction":0.0095,"in_wiki":true,"description":"A shop that primarily sells mobile phones and accessories."}
+{"value":"lock_gate","count":15694,"fraction":0.0014,"in_wiki":true,"description":"Gate of a lock"}
+{"value":"boundary_stone","count":15625,"fraction":0.0341,"in_wiki":true,"description":"A physical marker that identifies a boundary"}
+{"value":"mast","count":15504,"fraction":0.01,"in_wiki":true,"description":"Mast is a vertical structure built to hold for example antennas"}
+{"value":"reservoir_covered","count":15423,"fraction":0.01,"in_wiki":true,"description":"A covered reservoir is a large man-made tank for holding fresh water"}
+{"value":"gift","count":15303,"fraction":0.0092,"in_wiki":true,"description":"Shop selling gifts, greeting cards, or tourist gifts (souvenirs)."}
+{"value":"coffee_shop","count":14535,"fraction":0.0412,"in_wiki":true,"description":""}
+{"value":"transportation","count":14495,"fraction":0.0001,"in_wiki":true,"description":""}
+{"value":"caravan_site","count":14262,"fraction":0.0142,"in_wiki":true,"description":"A place where you can stay in a caravan overnight or for longer periods."}
+{"value":"greengrocer","count":14184,"fraction":0.0085,"in_wiki":true,"description":"A shop which sells fruits and vegetables"}
+{"value":"home","count":14068,"fraction":0.0172,"in_wiki":false,"description":""}
+{"value":"chemist","count":13919,"fraction":0.008400000000000001,"in_wiki":true,"description":"A shop selling articles of personal hygiene, cosmetics, and household cleaning products."}
+{"value":"hedge_bank","count":13865,"fraction":0.0028,"in_wiki":true,"description":""}
+{"value":"guard_rail","count":13855,"fraction":0.0028,"in_wiki":true,"description":"A guard rail is typically a metal rail designed to keep vehicles within their roadway and prevent dangerous collisions"}
+{"value":"saddle","count":13392,"fraction":0.0007,"in_wiki":true,"description":""}
+{"value":"waterfall","count":13386,"fraction":0.0012000000000000001,"in_wiki":true,"description":""}
+{"value":"raceway","count":13120,"fraction":0.0001,"in_wiki":true,"description":""}
+{"value":"switch","count":12997,"fraction":0.0012000000000000001,"in_wiki":true,"description":""}
+{"value":"wadi","count":12983,"fraction":0.0012000000000000001,"in_wiki":true,"description":"Don't use, see wikipage"}
+{"value":"cable_distribution_cabinet","count":12875,"fraction":0.0012000000000000001,"in_wiki":true,"description":"Cable distribution cabinet"}
+{"value":"gasometer","count":12761,"fraction":0.0083,"in_wiki":true,"description":"Gas holder"}
+{"value":"sandwich","count":12723,"fraction":0.0361,"in_wiki":false,"description":""}
+{"value":"busbar","count":12698,"fraction":0.0012000000000000001,"in_wiki":false,"description":""}
+{"value":"scrub","count":12436,"fraction":0.0009000000000000001,"in_wiki":false,"description":""}
+{"value":"breakwater","count":12432,"fraction":0.0081,"in_wiki":true,"description":"A man-made structure designed to protect a shore or harbour from the sea and waves."}
+{"value":"picnic_table","count":12368,"fraction":0.0045000000000000005,"in_wiki":true,"description":""}
+{"value":"train_station","count":12316,"fraction":0.0001,"in_wiki":true,"description":"A train station building"}
+{"value":"no","count":12228,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"flagpole","count":12128,"fraction":0.0079,"in_wiki":true,"description":"A long pole built to hold a flag"}
+{"value":"field","count":12051,"fraction":0.0009000000000000001,"in_wiki":true,"description":"Deprecated tag, use landuse=farmland instead."}
+{"value":"garden_centre","count":11951,"fraction":0.007200000000000001,"in_wiki":true,"description":"Shop selling potted flowers, maybe even trees."}
+{"value":"marsh","count":11621,"fraction":0.0006000000000000001,"in_wiki":true,"description":"Use natural=wetland , wetland=marsh instead."}
+{"value":"houseboat","count":11511,"fraction":0.0001,"in_wiki":true,"description":"A boat used primarily as a home."}
+{"value":"dormitory","count":11365,"fraction":0.0001,"in_wiki":true,"description":"College or university dormitory for shared living of its students."}
+{"value":"sports","count":11114,"fraction":0.0067,"in_wiki":true,"description":"A shop selling sports equipment and clothing."}
+{"value":"water_works","count":10978,"fraction":0.0071,"in_wiki":true,"description":"Place where drinking water is found and applied to the local waterpipes network."}
+{"value":"rest_area","count":10911,"fraction":0.0001,"in_wiki":true,"description":"Place where drivers can leave the road to rest, but not refuel."}
+{"value":"computer","count":10894,"fraction":0.0066,"in_wiki":true,"description":"A shop selling computers, peripherals, software, ..."}
+{"value":"minor_distribution","count":10748,"fraction":0.3638,"in_wiki":true,"description":""}
+{"value":"gate","count":10690,"fraction":0.0378,"in_wiki":true,"description":"Used to mark the gate numbers at the airports."}
+{"value":"variety_store","count":10634,"fraction":0.0064,"in_wiki":true,"description":"A en=variety store or price-point retailer is a retail store that sells inexpensive items"}
+{"value":"kindergarten","count":10572,"fraction":0.0001,"in_wiki":true,"description":"A generic kindergarten building."}
+{"value":"preserved","count":10432,"fraction":0.0037,"in_wiki":true,"description":"Historical railway. Usually a tourist attraction."}
+{"value":"car_parts","count":10409,"fraction":0.0063,"in_wiki":true,"description":"A place selling auto parts, auto accessories, motor oil, car chemicals, etc."}
+{"value":"german","count":10395,"fraction":0.029500000000000002,"in_wiki":false,"description":""}
+{"value":"wire_fence","count":10315,"fraction":0.0021000000000000003,"in_wiki":true,"description":""}
+{"value":"confectionery","count":10289,"fraction":0.006200000000000001,"in_wiki":true,"description":"A shop selling sweets and pastry. Also known as a confectionery."}
+{"value":"travel_agency","count":10273,"fraction":0.006200000000000001,"in_wiki":true,"description":"A shop selling travel related products and services"}
+{"value":"passing_place","count":10122,"fraction":0.0001,"in_wiki":true,"description":"A passing place on a single track road."}
+{"value":"alpine_hut","count":10117,"fraction":0.010100000000000001,"in_wiki":true,"description":"An alpine hut is a remote building located in the mountains intended to provide board and lodging."}
+{"value":"laundry","count":9982,"fraction":0.006,"in_wiki":true,"description":"A shop to get your normal clothes washed."}
+{"value":"service","count":9951,"fraction":0.012100000000000001,"in_wiki":false,"description":""}
+{"value":"stationery","count":9801,"fraction":0.0059,"in_wiki":true,"description":"A shop selling office supplies"}
+{"value":"stop","count":9778,"fraction":0.0035,"in_wiki":true,"description":"The spot on a railway track where a train stops at a station"}
+{"value":"beverages","count":9637,"fraction":0.0058000000000000005,"in_wiki":true,"description":"Shop focused on selling alcoholic and non-alcoholic beverages."}
+{"value":"hangar","count":9568,"fraction":0.033800000000000004,"in_wiki":true,"description":"Large airport buildings with extensive floor areas for housing aircraft."}
+{"value":"fell","count":9554,"fraction":0.0005,"in_wiki":true,"description":"Habitat above tree line covered with grass, dwarf shrubs and mosses."}
+{"value":"office","count":9474,"fraction":0.034800000000000005,"in_wiki":true,"description":""}
+{"value":"turning_loop","count":9444,"fraction":0.0001,"in_wiki":true,"description":"A widened area of a highway with a non-traversable island for turning around, often circular and at the end of a road."}
+{"value":"building","count":9274,"fraction":0.020200000000000003,"in_wiki":true,"description":""}
+{"value":"stable","count":9266,"fraction":0.0001,"in_wiki":true,"description":"A building or part of a building that is used as a stable for horses"}
+{"value":"distribution","count":9207,"fraction":0.3116,"in_wiki":true,"description":""}
+{"value":"toys","count":9125,"fraction":0.0055000000000000005,"in_wiki":true,"description":"A toy store."}
+{"value":"newsagent","count":9013,"fraction":0.0054,"in_wiki":true,"description":"Shop selling newspapers, cigarettes, other goods"}
+{"value":"estate_agent","count":9003,"fraction":0.07490000000000001,"in_wiki":true,"description":"A place where you can rent or buy a house."}
+{"value":"japanese","count":8806,"fraction":0.025,"in_wiki":false,"description":""}
+{"value":"mexican","count":8731,"fraction":0.0247,"in_wiki":false,"description":""}
+{"value":"yes","count":8712,"fraction":0.07250000000000001,"in_wiki":false,"description":""}
+{"value":"kebab","count":8581,"fraction":0.024300000000000002,"in_wiki":false,"description":""}
+{"value":"insurance","count":8233,"fraction":0.0685,"in_wiki":true,"description":"An office at which you can take out insurance policies."}
+{"value":"indian","count":8141,"fraction":0.023100000000000002,"in_wiki":false,"description":""}
+{"value":"mud","count":8121,"fraction":0.0004,"in_wiki":true,"description":"Large area covered with mud"}
+{"value":"garage","count":8079,"fraction":0.0098,"in_wiki":false,"description":""}
+{"value":"reef","count":7930,"fraction":0.0004,"in_wiki":true,"description":"A feature (rock, sandbar, coral, etc) lying beneath the surface of the water"}
+{"value":"dry_cleaning","count":7863,"fraction":0.0047,"in_wiki":true,"description":"A shop or kiosk offering a clothes dry cleaning service."}
+{"value":"pet","count":7838,"fraction":0.0047,"in_wiki":true,"description":"A shop selling pets"}
+{"value":"storage_tank","count":7810,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"county","count":7784,"fraction":0.0021000000000000003,"in_wiki":true,"description":""}
+{"value":"heritage","count":7775,"fraction":0.017,"in_wiki":true,"description":""}
+{"value":"american","count":7757,"fraction":0.022000000000000002,"in_wiki":false,"description":""}
+{"value":"vacant","count":7700,"fraction":0.0046,"in_wiki":true,"description":"Shop that is currently not being used."}
+{"value":"water_park","count":7698,"fraction":0.0028,"in_wiki":true,"description":"An amusement area with water slides, recreational swimming pools and dressing rooms."}
+{"value":"shop","count":7619,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"elevator","count":7578,"fraction":0.0001,"in_wiki":true,"description":"An elevator (or lift) is used to travel vertically, providing passenger and freight access between pathways at different floor levels."}
+{"value":"motorcycle","count":7546,"fraction":0.0045000000000000005,"in_wiki":true,"description":"A shop that sells motorcycles and/or related accessories and services"}
+{"value":"lighthouse","count":7489,"fraction":0.0049,"in_wiki":true,"description":"A light signal assisting navigation on sea."}
+{"value":"bunker","count":7481,"fraction":0,"in_wiki":true,"description":"A hardened military building."}
+{"value":"construction","count":7394,"fraction":0.0027,"in_wiki":true,"description":""}
+{"value":"chair_lift","count":7337,"fraction":0.10300000000000001,"in_wiki":true,"description":"An open chairlift run. These have a single seat to sit on and are open to the outside air"}
+{"value":"line","count":7178,"fraction":0.0014,"in_wiki":false,"description":""}
+{"value":"plant_nursery","count":7150,"fraction":0.0005,"in_wiki":true,"description":"Represents land that is used solely for plant nursery's"}
+{"value":"ice_cream","count":7118,"fraction":0.020200000000000003,"in_wiki":false,"description":""}
+{"value":"MDF","count":7112,"fraction":0.0046,"in_wiki":true,"description":"Main Distribution Frame"}
+{"value":"portal","count":7101,"fraction":0.0007,"in_wiki":false,"description":""}
+{"value":"ford","count":7081,"fraction":0.0001,"in_wiki":true,"description":"A point where a path or road crosses a river or stream which is at times covered by shallow water."}
+{"value":"asian","count":7078,"fraction":0.0201,"in_wiki":false,"description":""}
+{"value":"french","count":7010,"fraction":0.0199,"in_wiki":false,"description":""}
+{"value":"chicken","count":7006,"fraction":0.0199,"in_wiki":false,"description":""}
+{"value":"dyke","count":6849,"fraction":0.0044,"in_wiki":true,"description":"A dyke is a an embankment built to restrict the flow of water or other liquids"}
+{"value":"aquaculture","count":6717,"fraction":0.0005,"in_wiki":true,"description":"Area on land or sea, where fish, shellfish, or shells are breed"}
+{"value":"services","count":6715,"fraction":0.0001,"in_wiki":true,"description":"Place where drivers can leave a road to refuel, rest, or take refreshments."}
+{"value":"greek","count":6637,"fraction":0.0188,"in_wiki":false,"description":""}
+{"value":"allotments","count":6487,"fraction":0.0018000000000000002,"in_wiki":true,"description":"Separate settlement, which is located outside inhabited locality and has its own addressing"}
+{"value":"boutique","count":6468,"fraction":0.0039000000000000003,"in_wiki":true,"description":"a small shopping outlet, especially one that specializes in elite and fashionable items"}
+{"value":"razed","count":6449,"fraction":0.0023,"in_wiki":true,"description":""}
+{"value":"cable","count":6434,"fraction":0.0006000000000000001,"in_wiki":true,"description":"Cabling of low / high voltage lines"}
+{"value":"landform","count":6323,"fraction":0.00030000000000000003,"in_wiki":true,"description":""}
+{"value":"transmission","count":6275,"fraction":0.2124,"in_wiki":true,"description":""}
+{"value":"windmill","count":6190,"fraction":0.004,"in_wiki":true,"description":"A traditional windmill."}
+{"value":"mine","count":6181,"fraction":0.004,"in_wiki":false,"description":""}
+{"value":"monitoring_station","count":6152,"fraction":0.004,"in_wiki":true,"description":""}
+{"value":"stone","count":6097,"fraction":0.00030000000000000003,"in_wiki":true,"description":"A single notable freestanding rock, which may differ from the composition of the terrain it lies in."}
+{"value":"terminal","count":5966,"fraction":0.0211,"in_wiki":true,"description":"Airport passenger building"}
+{"value":"hifi","count":5962,"fraction":0.0036000000000000003,"in_wiki":true,"description":"Shop selling high fidelity audio components (music players, amplifiers, speakers, cables)"}
+{"value":"lawyer","count":5925,"fraction":0.049300000000000004,"in_wiki":true,"description":"An office for a lawyer."}
+{"value":"citywalls","count":5895,"fraction":0.0129,"in_wiki":true,"description":"A citywall is a fortification used to defend a city."}
+{"value":"administrative","count":5892,"fraction":0.049,"in_wiki":true,"description":"Local authorities, administrative and supervising institutions that are not related to state government."}
+{"value":"dolphin","count":5820,"fraction":0.0038,"in_wiki":true,"description":"A dolphin is a marine structure for berthing and mooring of vessels."}
+{"value":"deli","count":5581,"fraction":0.0034000000000000002,"in_wiki":true,"description":"Used to mark a delicatessen store."}
+{"value":"swing_gate","count":5571,"fraction":0.0011,"in_wiki":true,"description":""}
+{"value":"tyres","count":5526,"fraction":0.0033,"in_wiki":true,"description":"A shop selling tyres."}
+{"value":"beacon","count":5447,"fraction":0.0035,"in_wiki":true,"description":"A structure for signalling on land and sea"}
+{"value":"parking_position","count":5351,"fraction":0.0189,"in_wiki":true,"description":"Where planes park."}
+{"value":"embankment","count":5117,"fraction":0.001,"in_wiki":false,"description":""}
+{"value":"zoo","count":4955,"fraction":0.0049,"in_wiki":true,"description":"Indicates a zoo or zoological garden, where animals are confined"}
+{"value":"thai","count":4922,"fraction":0.013900000000000001,"in_wiki":false,"description":""}
+{"value":"crane","count":4847,"fraction":0.0031000000000000003,"in_wiki":true,"description":"A tag for a stationary, permanent crane."}
+{"value":"theme_park","count":4788,"fraction":0.0048000000000000004,"in_wiki":true,"description":"An amusement park where entertainment is provided by rides, game concessions, etc."}
+{"value":"outdoor","count":4751,"fraction":0.0029000000000000002,"in_wiki":true,"description":"Shop selling trekking, climbing, camping equipment (and GPSes)."}
+{"value":"trail_blaze","count":4671,"fraction":0.0171,"in_wiki":false,"description":""}
+{"value":"tank","count":4658,"fraction":0.003,"in_wiki":false,"description":""}
+{"value":"drag_lift","count":4614,"fraction":0.0648,"in_wiki":true,"description":"An overhead tow-line for skiers and riders."}
+{"value":"mine_shaft","count":4583,"fraction":0.01,"in_wiki":false,"description":""}
+{"value":"chain","count":4583,"fraction":0.0009000000000000001,"in_wiki":true,"description":"A chain used to prevent motorised vehicles."}
+{"value":"copyshop","count":4541,"fraction":0.0027,"in_wiki":true,"description":"A shop that offers photocopying and printing services."}
+{"value":"sushi","count":4499,"fraction":0.012700000000000001,"in_wiki":false,"description":""}
+{"value":"international","count":4454,"fraction":0.0126,"in_wiki":false,"description":""}
+{"value":"salt_pond","count":4406,"fraction":0.00030000000000000003,"in_wiki":true,"description":"A place where sea water is evaporated to extract its salt"}
+{"value":"utility_pole","count":4380,"fraction":0.0028,"in_wiki":true,"description":"A single pole supporting elevation of any of various and unspecified public utilities, such as power transmission, lighting or telephony."}
+{"value":"turnstile","count":4379,"fraction":0.0009000000000000001,"in_wiki":true,"description":"A passage on foot through a fence"}
+{"value":"waterway","count":4344,"fraction":0.0028,"in_wiki":false,"description":""}
+{"value":"mineshaft","count":4328,"fraction":0.0028,"in_wiki":true,"description":"A vertical tunnel."}
+{"value":"soakhole","count":4298,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"city_block","count":4190,"fraction":0.0012000000000000001,"in_wiki":true,"description":"A named city block, usually surrounded by streets."}
+{"value":"terminal","count":4138,"fraction":0.0152,"in_wiki":true,"description":""}
+{"value":"fish_and_chips","count":4082,"fraction":0.011600000000000001,"in_wiki":false,"description":""}
+{"value":"cape","count":3984,"fraction":0.0002,"in_wiki":true,"description":"A piece of elevated land sticking out into the sea or large lake."}
+{"value":"religious","count":3916,"fraction":0.00030000000000000003,"in_wiki":true,"description":"An area used for religious purposes"}
+{"value":"birds_nest","count":3908,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"dog_park","count":3859,"fraction":0.0014,"in_wiki":true,"description":"Designated area, with or without a fenced boundary, where dog-owners are permitted to exercise their pets unrestrained"}
+{"value":"dismantled","count":3820,"fraction":0.0014,"in_wiki":true,"description":""}
+{"value":"miniature_golf","count":3770,"fraction":0.0014,"in_wiki":true,"description":"A place or area that you can play miniature golf."}
+{"value":"field_boundary","count":3761,"fraction":0.0007,"in_wiki":false,"description":""}
+{"value":"sauna","count":3720,"fraction":0.0014,"in_wiki":true,"description":"Sauna"}
+{"value":"tomb","count":3678,"fraction":0.008,"in_wiki":true,"description":"a tag to map a tomb"}
+{"value":"reinforced_slope","count":3638,"fraction":0.0024000000000000002,"in_wiki":false,"description":""}
+{"value":"grass","count":3579,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"airstrip","count":3544,"fraction":0.0125,"in_wiki":false,"description":""}
+{"value":"emergency","count":3506,"fraction":0.0043,"in_wiki":false,"description":""}
+{"value":"communications_tower","count":3495,"fraction":0.0023,"in_wiki":true,"description":"Huge tower for transmitting radio applications"}
+{"value":"bridge","count":3460,"fraction":0.0022,"in_wiki":true,"description":"Indicate the outline of a bridge and group together all features for that bridge."}
+{"value":"watermill","count":3450,"fraction":0.0022,"in_wiki":true,"description":"A watermill is a mill driven by water power."}
+{"value":"railway_crossing","count":3430,"fraction":0.0012000000000000001,"in_wiki":true,"description":"Crossing rails that do not interconnect"}
+{"value":"telecommunication","count":3402,"fraction":0.028300000000000002,"in_wiki":true,"description":"Telecommunication company office"}
+{"value":"street_cabinet","count":3388,"fraction":0.0022,"in_wiki":true,"description":"All kind of cabinet merely located in the street and hosting technical stuff to operate different facilities"}
+{"value":"proposed","count":3372,"fraction":0.0012000000000000001,"in_wiki":true,"description":""}
+{"value":"beam","count":3354,"fraction":0.0022,"in_wiki":false,"description":""}
+{"value":"border_control","count":3313,"fraction":0.0007,"in_wiki":true,"description":"Control point at an international border between two countries"}
+{"value":"dock","count":3278,"fraction":0.00030000000000000003,"in_wiki":true,"description":"A dock is an enclosed area of water for ships and other craft within which the height of the water can be managed."}
+{"value":"region","count":3259,"fraction":0.0009000000000000001,"in_wiki":true,"description":""}
+{"value":"water_tank","count":3247,"fraction":0.0021000000000000003,"in_wiki":false,"description":""}
+{"value":"fishing","count":3230,"fraction":0.0012000000000000001,"in_wiki":true,"description":"Place for fishing."}
+{"value":"ngo","count":3170,"fraction":0.0264,"in_wiki":true,"description":"An office for an non-government organisation."}
+{"value":"sally_port","count":3130,"fraction":0.0006000000000000001,"in_wiki":true,"description":""}
+{"value":"antenna","count":3126,"fraction":0.002,"in_wiki":true,"description":"Used for some kind of antennas."}
+{"value":"adit","count":3126,"fraction":0.002,"in_wiki":true,"description":"An adit is a type of entrance to an underground mine which is horizontal or nearly horizontal"}
+{"value":"door","count":3124,"fraction":0.0006000000000000001,"in_wiki":false,"description":""}
+{"value":"horse_riding","count":3112,"fraction":0.0011,"in_wiki":true,"description":""}
+{"value":"miniature","count":3062,"fraction":0.0011,"in_wiki":true,"description":""}
+{"value":"abandoned","count":3060,"fraction":0,"in_wiki":true,"description":""}
+{"value":"volcano","count":3030,"fraction":0.0002,"in_wiki":true,"description":"A volcano is an opening exposed on the earth's surface where volcanic material is emitted."}
+{"value":"bunker_silo","count":3025,"fraction":0.002,"in_wiki":true,"description":"bunker silo"}
+{"value":"logging","count":2970,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"emergency_bay","count":2965,"fraction":0,"in_wiki":true,"description":""}
+{"value":"shingle","count":2945,"fraction":0.0002,"in_wiki":true,"description":"An accumulation of rounded stones on a beach or riverbed"}
+{"value":"turkish","count":2942,"fraction":0.0083,"in_wiki":false,"description":""}
+{"value":"educational_institution","count":2929,"fraction":0.0244,"in_wiki":true,"description":"An office for an educational institution."}
+{"value":"carpenter","count":2925,"fraction":0.0913,"in_wiki":true,"description":"Workplace or office of Carpenters that work with timber to construct, install and maintain buildings, furniture, and other objects."}
+{"value":"reservoir_watershed","count":2867,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"yes","count":2845,"fraction":0.0018000000000000002,"in_wiki":false,"description":""}
+{"value":"platter","count":2803,"fraction":0.039400000000000004,"in_wiki":true,"description":"Platter lift (poma). Overhead tow-line for skiers and riders with platters."}
+{"value":"corridor","count":2767,"fraction":0,"in_wiki":true,"description":"A corridor inside a building"}
+{"value":"plant","count":2762,"fraction":0.00030000000000000003,"in_wiki":true,"description":"Places where power is produced with power=generator help."}
+{"value":"seafood","count":2675,"fraction":0.0076,"in_wiki":false,"description":""}
+{"value":"it","count":2659,"fraction":0.0221,"in_wiki":true,"description":"An office for an IT specialist."}
+{"value":"crevasse","count":2645,"fraction":0.0001,"in_wiki":true,"description":"A large crack in a glacier"}
+{"value":"plot","count":2633,"fraction":0.0007,"in_wiki":true,"description":"A named plot is a tract or parcel of land owned or meant to be owned by some owner."}
+{"value":"holding_position","count":2622,"fraction":0.009300000000000001,"in_wiki":true,"description":"A point behind which aircraft are considered clear of a crossing way"}
+{"value":"firepit","count":2553,"fraction":0.0009000000000000001,"in_wiki":true,"description":"A fireplace on a camp or picnic site"}
+{"value":"steak_house","count":2490,"fraction":0.0071,"in_wiki":false,"description":""}
+{"value":"waterfall","count":2478,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"highway","count":2394,"fraction":0.0002,"in_wiki":true,"description":""}
+{"value":"church","count":2365,"fraction":0.005200000000000001,"in_wiki":false,"description":""}
+{"value":"storage","count":2355,"fraction":0.0015,"in_wiki":false,"description":""}
+{"value":"spanish","count":2336,"fraction":0.0066,"in_wiki":false,"description":""}
+{"value":"ice_rink","count":2333,"fraction":0.0009000000000000001,"in_wiki":true,"description":"A place where you can skate or play ice hockey."}
+{"value":"yes","count":2316,"fraction":0.0023,"in_wiki":true,"description":"A general tourist attraction."}
+{"value":"yes","count":2305,"fraction":0,"in_wiki":true,"description":""}
+{"value":"catenary_mast","count":2303,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"heliostat","count":2298,"fraction":0.0002,"in_wiki":true,"description":"A mirror off a heliostat device"}
+{"value":"fitness_station","count":2266,"fraction":0.0008,"in_wiki":true,"description":"An outdoor facility where people can practise typical fitness excercises"}
+{"value":"school","count":2257,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"turntable","count":2219,"fraction":0.0008,"in_wiki":true,"description":"These are used for changing the direction, that part of a train is pointing in."}
+{"value":"wood","count":2201,"fraction":0.0002,"in_wiki":true,"description":""}
+{"value":"oil_tank","count":2200,"fraction":0.0014,"in_wiki":false,"description":""}
+{"value":"wood_fence","count":2194,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"t-bar","count":2191,"fraction":0.0308,"in_wiki":true,"description":"T-bar lift. Overhead tow-line for skiers and riders with T-shaped carriers for two passengers."}
+{"value":"valley","count":2187,"fraction":0.0001,"in_wiki":true,"description":"A valley"}
+{"value":"pa","count":2121,"fraction":0.0046,"in_wiki":true,"description":"A New Zealand Maori Pā"}
+{"value":"wreck","count":2084,"fraction":0.0045000000000000005,"in_wiki":true,"description":"A a nautical craft that has unintentionally been sunk or destroyed."}
+{"value":"yes","count":2064,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"milestone","count":2039,"fraction":0.0044,"in_wiki":true,"description":"A historic marker that shows the distance to important destinations"}
+{"value":"roman_road","count":2027,"fraction":0.0044,"in_wiki":true,"description":""}
+{"value":"accountant","count":2024,"fraction":0.016800000000000002,"in_wiki":true,"description":"An office for an accountant."}
+{"value":"route_marker","count":2008,"fraction":0.0074,"in_wiki":false,"description":""}
+{"value":"manor","count":2001,"fraction":0.0044,"in_wiki":true,"description":"Historic manors/mansions having different use today"}
+{"value":"bump_gate","count":1999,"fraction":0.0004,"in_wiki":true,"description":""}
+{"value":"hampshire_gate","count":1993,"fraction":0.0004,"in_wiki":true,"description":""}
+{"value":"monorail","count":1974,"fraction":0.0007,"in_wiki":true,"description":"A railway with only a single rail."}
+{"value":"drystream","count":1971,"fraction":0.0002,"in_wiki":true,"description":"Small dry stream beds and rills."}
+{"value":"lamp","count":1968,"fraction":0.0013000000000000002,"in_wiki":false,"description":""}
+{"value":"exit","count":1912,"fraction":0.0023,"in_wiki":false,"description":""}
+{"value":"shoemaker","count":1893,"fraction":0.0591,"in_wiki":true,"description":"A place where shoes, boots, sandals, clogs and moccasins are created, repaired or altered to fit personal needs."}
+{"value":"traffic_island","count":1892,"fraction":0.0001,"in_wiki":true,"description":"Usually a pedestrian refuge in the middle of highways linked by crossings."}
+{"value":"state","count":1880,"fraction":0.0005,"in_wiki":true,"description":"A large sub-national political/administrative area."}
+{"value":"employment_agency","count":1873,"fraction":0.015600000000000001,"in_wiki":true,"description":"An office for an employment service."}
+{"value":"fort","count":1870,"fraction":0.0041,"in_wiki":true,"description":"Fort"}
+{"value":"research","count":1865,"fraction":0.0155,"in_wiki":true,"description":"research and development"}
+{"value":"avalanche_protection","count":1865,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"pole","count":1827,"fraction":0.0012000000000000001,"in_wiki":false,"description":""}
+{"value":"wilderness_hut","count":1826,"fraction":0.0018000000000000002,"in_wiki":true,"description":"Wilderness hut or backcountry hut is a remote building, with generally a fireplace, intended to provide temporary shelter and sleeping accommodation."}
+{"value":"beach_resort","count":1814,"fraction":0.0007,"in_wiki":true,"description":"A managed beach, including within the boundary any associated facilities. Entry may also require payment of a fee."}
+{"value":"sinkhole","count":1803,"fraction":0.0001,"in_wiki":true,"description":"A natural depression"}
+{"value":"windsock","count":1784,"fraction":0.0063,"in_wiki":true,"description":"Shows pilots wind direction and speed."}
+{"value":"signal_box","count":1771,"fraction":0.0006000000000000001,"in_wiki":false,"description":""}
+{"value":"photographer","count":1756,"fraction":0.0548,"in_wiki":true,"description":"Workplace or office of a person who takes photographs using a camera."}
+{"value":"yes","count":1754,"fraction":0.0005,"in_wiki":false,"description":""}
+{"value":"bunker","count":1739,"fraction":0.0038,"in_wiki":false,"description":""}
+{"value":"house","count":1737,"fraction":0.0038,"in_wiki":false,"description":""}
+{"value":"livestock","count":1701,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"boatyard","count":1672,"fraction":0.0001,"in_wiki":true,"description":"Boatyard - a place for constructing, repairing and storing vessels out of the water."}
+{"value":"vietnamese","count":1670,"fraction":0.0047,"in_wiki":false,"description":""}
+{"value":"pond","count":1662,"fraction":0.0001,"in_wiki":true,"description":"Deprecated, see wiki."}
+{"value":"moor","count":1651,"fraction":0.0001,"in_wiki":true,"description":"Don't use, see wikipage"}
+{"value":"electrician","count":1651,"fraction":0.051500000000000004,"in_wiki":true,"description":"Electrician"}
+{"value":"railway","count":1640,"fraction":0.0036000000000000003,"in_wiki":false,"description":""}
+{"value":"hill","count":1586,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"travel_agent","count":1574,"fraction":0.0131,"in_wiki":true,"description":""}
+{"value":"municipality","count":1562,"fraction":0.0004,"in_wiki":true,"description":""}
+{"value":"physician","count":1551,"fraction":0.0129,"in_wiki":false,"description":""}
+{"value":"apartment","count":1534,"fraction":0.0015,"in_wiki":true,"description":"A furnished flat/apartment that can be rented for a short period of time, applies either to single apartment or to multiple apartments in a building/bloc"}
+{"value":"fish","count":1526,"fraction":0.0043,"in_wiki":false,"description":""}
+{"value":"derail","count":1522,"fraction":0.0005,"in_wiki":true,"description":"Derails uncontrolled vehicles to protect the main track"}
+{"value":"city_gate","count":1517,"fraction":0.0033,"in_wiki":true,"description":"A city gate within a city wall."}
+{"value":"milestone","count":1496,"fraction":0.0001,"in_wiki":true,"description":"A stone or metal marker denoting the distance traveled along a waterway."}
+{"value":"architect","count":1461,"fraction":0.0122,"in_wiki":true,"description":"An office for an architect or group of architects."}
+{"value":"derelict_canal","count":1445,"fraction":0.0001,"in_wiki":true,"description":"A derelict artificial open waterway used for transportation, waterpower, or irrigation."}
+{"value":"magic_carpet","count":1407,"fraction":0.0198,"in_wiki":true,"description":"Ski lift for small children resembling a conveyor belt."}
+{"value":"goods","count":1404,"fraction":0.019700000000000002,"in_wiki":true,"description":"See wiki for alternatives"}
+{"value":"bird_hide","count":1382,"fraction":0.0005,"in_wiki":true,"description":"A bird hide is a place that is used to observe wildlife, especially birds."}
+{"value":"noodle","count":1378,"fraction":0.0039000000000000003,"in_wiki":false,"description":""}
+{"value":"newspaper","count":1372,"fraction":0.0114,"in_wiki":true,"description":"The office for a newspaper."}
+{"value":"yes","count":1369,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"borough","count":1368,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"battlefield","count":1363,"fraction":0.003,"in_wiki":true,"description":"The site of a battle or military skirmish in the past."}
+{"value":"barbecue","count":1308,"fraction":0.0037,"in_wiki":false,"description":""}
+{"value":"riverbank","count":1301,"fraction":0.0001,"in_wiki":true,"description":""}
+{"value":"yes","count":1290,"fraction":0.0005,"in_wiki":false,"description":""}
+{"value":"unknown","count":1290,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"stone","count":1286,"fraction":0.0028,"in_wiki":true,"description":"A stone shaped or placed by man with historical value."}
+{"value":"industrial;retail","count":1280,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"vegetarian","count":1269,"fraction":0.0036000000000000003,"in_wiki":false,"description":""}
+{"value":"street_light","count":1265,"fraction":0,"in_wiki":true,"description":""}
+{"value":"religion","count":1264,"fraction":0.0105,"in_wiki":true,"description":"An office of an religion instance."}
+{"value":"lock","count":1250,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"tailor","count":1246,"fraction":0.038900000000000004,"in_wiki":true,"description":""}
+{"value":"traffic_island","count":1234,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"brewery","count":1230,"fraction":0.038400000000000004,"in_wiki":true,"description":"A brewery is a dedicated building for the making of beer"}
+{"value":"quarter","count":1226,"fraction":0.00030000000000000003,"in_wiki":true,"description":"A quarter is a named, geographically localised place within a suburb of a larger city or within a town which is bigger than a neighbourhood"}
+{"value":"navigationaid","count":1202,"fraction":0.004200000000000001,"in_wiki":true,"description":"Used to mark facilities that support radio navigation for aircraft (VOR, NDB, TACAN, etc)"}
+{"value":"plumber","count":1201,"fraction":0.0375,"in_wiki":true,"description":"Workplace or office of a tradesman who specializes in installing and maintaining systems used for potable (drinking) water, sewage, and drainage."}
+{"value":"animal_keeping","count":1195,"fraction":0.0001,"in_wiki":true,"description":""}
+{"value":"traction","count":1189,"fraction":0.0402,"in_wiki":true,"description":""}
+{"value":"forest","count":1169,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"wayside_chapel","count":1156,"fraction":0.0025,"in_wiki":false,"description":""}
+{"value":"gondola","count":1145,"fraction":0.0161,"in_wiki":true,"description":"An aerialway where the cabins go around in a circle"}
+{"value":"facility","count":1117,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"gallery","count":1111,"fraction":0.0011,"in_wiki":true,"description":"Art gallery. Displays art exhibits e.g. paintings, contemporary art or photography"}
+{"value":"yes","count":1099,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"mine","count":1086,"fraction":0.0024000000000000002,"in_wiki":true,"description":"Location of abandoned underground mine workings for minerals such as coal or lead."}
+{"value":"metal_construction","count":1084,"fraction":0.033800000000000004,"in_wiki":true,"description":""}
+{"value":"hikingmap","count":1082,"fraction":0.004,"in_wiki":false,"description":""}
+{"value":"incline_steep","count":1080,"fraction":0,"in_wiki":true,"description":""}
+{"value":"island","count":1065,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"cable_car","count":1059,"fraction":0.0149,"in_wiki":true,"description":"A cable car run. Aerial tramways that are just one pair of big cars that go in alternating directions"}
+{"value":"mine","count":1040,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"association","count":1036,"fraction":0.0086,"in_wiki":true,"description":"An office of a non-profit organisation, society, e.g. student, sport, consumer, automobile, bike association, etc…"}
+{"value":"switchgear","count":1026,"fraction":0.0001,"in_wiki":true,"description":""}
+{"value":"landslide","count":1026,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"gardener","count":997,"fraction":0.031100000000000003,"in_wiki":true,"description":"Workplace or office of a garden designer or a landscape gardener."}
+{"value":"funicular","count":994,"fraction":0.0004,"in_wiki":true,"description":"Cable driven inclined railway."}
+{"value":"korean","count":982,"fraction":0.0028,"in_wiki":false,"description":""}
+{"value":"yes","count":977,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"arete","count":973,"fraction":0.0001,"in_wiki":true,"description":"Used to tag a peaked ridge."}
+{"value":"technical_station","count":960,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"residence","count":954,"fraction":0.0012000000000000001,"in_wiki":false,"description":""}
+{"value":"financial","count":950,"fraction":0.0079,"in_wiki":false,"description":""}
+{"value":"therapist","count":941,"fraction":0.0078000000000000005,"in_wiki":false,"description":""}
+{"value":"dance","count":933,"fraction":0.00030000000000000003,"in_wiki":true,"description":"Places to go dancing."}
+{"value":"meadow","count":931,"fraction":0,"in_wiki":true,"description":""}
+{"value":"charcoal_kiln","count":926,"fraction":0.002,"in_wiki":false,"description":""}
+{"value":"railing","count":922,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"sawmill","count":913,"fraction":0.0285,"in_wiki":true,"description":"A sawmill is a facility where logs are cut into timber"}
+{"value":"confectionery","count":891,"fraction":0.027800000000000002,"in_wiki":true,"description":"A place where the set of food items that are rich in sugar, any one or type of which is called a confection is produced."}
+{"value":"yes","count":889,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"painter","count":888,"fraction":0.027700000000000002,"in_wiki":true,"description":"Workplace or office of a house painter which is a tradesman responsible for the painting and decorating of buildings."}
+{"value":"resort","count":878,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"tree_line","count":873,"fraction":0,"in_wiki":false,"description":""}
+{"value":"hvac","count":862,"fraction":0.0269,"in_wiki":true,"description":"Workplace or office of an HVAC system designer (Heating, Ventilating, and Air Conditioning)"}
+{"value":"dune","count":859,"fraction":0,"in_wiki":true,"description":""}
+{"value":"bedrock","count":858,"fraction":0,"in_wiki":true,"description":""}
+{"value":"earthworks","count":854,"fraction":0.0019,"in_wiki":false,"description":""}
+{"value":"summer_mountain_farm","count":852,"fraction":0.0019,"in_wiki":false,"description":""}
+{"value":"churchyard","count":849,"fraction":0.0001,"in_wiki":true,"description":"Used to map the area surrounding a church or chapel, when it is not also a graveyard"}
+{"value":"threshing_floor","count":841,"fraction":0.0018000000000000002,"in_wiki":false,"description":""}
+{"value":"property_boundary","count":841,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"log","count":840,"fraction":0.0002,"in_wiki":true,"description":""}
+{"value":"fitness_centre","count":837,"fraction":0.00030000000000000003,"in_wiki":true,"description":""}
+{"value":"nature","count":833,"fraction":0.0031000000000000003,"in_wiki":false,"description":""}
+{"value":"friture","count":822,"fraction":0.0023,"in_wiki":false,"description":""}
+{"value":"junction","count":818,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"marking","count":817,"fraction":0.0029000000000000002,"in_wiki":true,"description":""}
+{"value":"aircraft","count":811,"fraction":0.0018000000000000002,"in_wiki":true,"description":"A decommissioned aircraft which generally remains in one place."}
+{"value":"monastery","count":786,"fraction":0.0017000000000000001,"in_wiki":true,"description":"Building/place that was a monastery."}
+{"value":"ramen","count":778,"fraction":0.0022,"in_wiki":false,"description":""}
+{"value":"stonemason","count":775,"fraction":0.024200000000000003,"in_wiki":true,"description":"A place where rough pieces of rock are shaped into accurate geometrical shapes."}
+{"value":"farm","count":765,"fraction":0.0017000000000000001,"in_wiki":true,"description":"A historical farm, kept in it's original state."}
+{"value":"bavarian","count":755,"fraction":0.0021000000000000003,"in_wiki":false,"description":""}
+{"value":"rope_tow","count":743,"fraction":0.010400000000000001,"in_wiki":true,"description":"Ski tow lift. Tow-line for skiers and riders where passenger hold by hand or use special tow grabbers."}
+{"value":"political_party","count":743,"fraction":0.006200000000000001,"in_wiki":true,"description":"An office for a Political Party."}
+{"value":"debris","count":736,"fraction":0.0001,"in_wiki":true,"description":""}
+{"value":"winery","count":730,"fraction":0.0228,"in_wiki":true,"description":"Produces wine"}
+{"value":"road","count":719,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"mediterranean","count":716,"fraction":0.002,"in_wiki":false,"description":""}
+{"value":"italian;pizza","count":702,"fraction":0.002,"in_wiki":false,"description":""}
+{"value":"garden","count":696,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"pottery","count":690,"fraction":0.021500000000000002,"in_wiki":true,"description":"A place where earthenware, stoneware and porcelain and other ceramic ware is made by potters."}
+{"value":"street_pole","count":680,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"pole;transformer","count":680,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"shelter","count":679,"fraction":0.0015,"in_wiki":false,"description":""}
+{"value":"tower","count":669,"fraction":0.0015,"in_wiki":false,"description":""}
+{"value":"bed_and_breakfast","count":664,"fraction":0.0007,"in_wiki":true,"description":""}
+{"value":"climbing","count":647,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"transition","count":639,"fraction":0.0216,"in_wiki":true,"description":""}
+{"value":"waypoint","count":634,"fraction":0.0022,"in_wiki":false,"description":""}
+{"value":"jersey_barrier","count":633,"fraction":0.0001,"in_wiki":true,"description":""}
+{"value":"industrial","count":632,"fraction":0.021400000000000002,"in_wiki":true,"description":""}
+{"value":"wasteland","count":627,"fraction":0,"in_wiki":true,"description":""}
+{"value":"minor_underground_cable","count":626,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"spur","count":624,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"handrail","count":621,"fraction":0.0001,"in_wiki":true,"description":"[[w:en:Handrail"}
+{"value":"hanami","count":618,"fraction":0.0006000000000000001,"in_wiki":false,"description":""}
+{"value":"handicraft","count":614,"fraction":0.019200000000000002,"in_wiki":true,"description":"A place where useful and decorative devices are made completely by hand or using only simple tools"}
+{"value":"curb","count":614,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"phone","count":613,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"landing_light","count":606,"fraction":0.0021000000000000003,"in_wiki":false,"description":""}
+{"value":"donut","count":606,"fraction":0.0017000000000000001,"in_wiki":false,"description":""}
+{"value":"dressmaker","count":603,"fraction":0.0188,"in_wiki":true,"description":"Dressmaker is a person who makes custom clothing for women, such as dresses, blouses, and evening gowns."}
+{"value":"wild_life","count":589,"fraction":0.0022,"in_wiki":false,"description":""}
+{"value":"station_site","count":584,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"photographic_laboratory","count":584,"fraction":0.0182,"in_wiki":true,"description":"A place where photos taken on a film or digital images are transformed into a more permanent form, often on paper or plastic foil."}
+{"value":"entrance","count":576,"fraction":0.0007,"in_wiki":false,"description":""}
+{"value":"fire_hydrant","count":566,"fraction":0.0012000000000000001,"in_wiki":false,"description":""}
+{"value":"pond","count":564,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"club","count":560,"fraction":0.0002,"in_wiki":true,"description":""}
+{"value":"net","count":551,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"glaziery","count":546,"fraction":0.017,"in_wiki":true,"description":"A place where residential, commercial, and artistic glass is selected, cutted, installed, replaced, and removed"}
+{"value":"footgate","count":540,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"abandoned","count":534,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"crepe","count":532,"fraction":0.0015,"in_wiki":false,"description":""}
+{"value":"roofer","count":526,"fraction":0.0164,"in_wiki":true,"description":"Workplace or office of a tradesman who is specialized in roof construction."}
+{"value":"brook","count":516,"fraction":0,"in_wiki":true,"description":"Tiny waterway, often, but not always, dry part of the year."}
+{"value":"history","count":514,"fraction":0.0019,"in_wiki":false,"description":""}
+{"value":"key_cutter","count":508,"fraction":0.0159,"in_wiki":true,"description":"A place where keys can be duplicated from originals."}
+{"value":"cake","count":506,"fraction":0.0014,"in_wiki":false,"description":""}
+{"value":"main_entrance","count":502,"fraction":0.0006000000000000001,"in_wiki":false,"description":""}
+{"value":"turning_point","count":498,"fraction":0,"in_wiki":true,"description":"A place to turn the driving direction for vessels, where the boats are longer than the river/canal is wide."}
+{"value":"bus_trap","count":490,"fraction":0.0001,"in_wiki":true,"description":"A short section of the roadway where there is a deep dip in the middle to prevent passage by some traffic."}
+{"value":"beef_bowl","count":488,"fraction":0.0014,"in_wiki":false,"description":""}
+{"value":"beekeeper","count":484,"fraction":0.0151,"in_wiki":true,"description":"A workplace of a beekeeper (apiarist)"}
+{"value":"caterer","count":481,"fraction":0.015000000000000001,"in_wiki":true,"description":"Workplace or office of one who prepares customized meals for takeout, or provides prepared meals or supplies to a group at social gatherings"}
+{"value":"wine_cellar","count":472,"fraction":0.0005,"in_wiki":true,"description":""}
+{"value":"social_club","count":468,"fraction":0.0002,"in_wiki":true,"description":""}
+{"value":"ship","count":465,"fraction":0.001,"in_wiki":true,"description":"A decommissioned ship/submarine which generally remains in one place"}
+{"value":"lebanese","count":462,"fraction":0.0013000000000000002,"in_wiki":false,"description":""}
+{"value":"connector","count":460,"fraction":0,"in_wiki":false,"description":""}
+{"value":"shop","count":455,"fraction":0.0006000000000000001,"in_wiki":false,"description":""}
+{"value":"roundhouse","count":455,"fraction":0.0002,"in_wiki":true,"description":"A characteristic semi-circular building used by railroads to service engines"}
+{"value":"cannon","count":455,"fraction":0.001,"in_wiki":true,"description":"A historic/retired cannon. Usually found on forts or battlefields."}
+{"value":"citymap","count":454,"fraction":0.0017000000000000001,"in_wiki":false,"description":""}
+{"value":"power_supply","count":440,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"canal","count":437,"fraction":0.001,"in_wiki":false,"description":""}
+{"value":"dry_bush","count":434,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"no","count":432,"fraction":0.0009000000000000001,"in_wiki":false,"description":""}
+{"value":"subdivision","count":430,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"secondary_entrance","count":428,"fraction":0.0005,"in_wiki":false,"description":""}
+{"value":"garden boundary","count":427,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"converter","count":425,"fraction":0.014400000000000001,"in_wiki":true,"description":""}
+{"value":"abandoned_station","count":424,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"papi","count":421,"fraction":0.0015,"in_wiki":false,"description":""}
+{"value":"unknown","count":409,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"blacksmith","count":408,"fraction":0.012700000000000001,"in_wiki":true,"description":"A place where a blacksmith forges tools, horseshoes, etc. from iron."}
+{"value":"fairway","count":407,"fraction":0,"in_wiki":false,"description":""}
+{"value":"locksmith","count":401,"fraction":0.0125,"in_wiki":true,"description":"A place where locks and keys are created or repaired."}
+{"value":"heuriger","count":400,"fraction":0.0011,"in_wiki":false,"description":""}
+{"value":"lake","count":399,"fraction":0,"in_wiki":false,"description":""}
+{"value":"bandstand","count":397,"fraction":0.0001,"in_wiki":true,"description":"An open structure where musical bands can perform concerts"}
+{"value":"bridge","count":394,"fraction":0.0009000000000000001,"in_wiki":false,"description":""}
+{"value":"industrial","count":388,"fraction":0.0008,"in_wiki":false,"description":""}
+{"value":"full-height_turnstile","count":377,"fraction":0.0001,"in_wiki":true,"description":""}
+{"value":"noodle;ramen","count":374,"fraction":0.0011,"in_wiki":false,"description":""}
+{"value":"steak","count":367,"fraction":0.001,"in_wiki":false,"description":""}
+{"value":"compensator","count":360,"fraction":0,"in_wiki":true,"description":""}
+{"value":"lavoir","count":359,"fraction":0.0008,"in_wiki":false,"description":""}
+{"value":"local","count":354,"fraction":0.001,"in_wiki":false,"description":""}
+{"value":"breakfast","count":350,"fraction":0.001,"in_wiki":false,"description":""}
+{"value":"navigation_aid","count":347,"fraction":0.0012000000000000001,"in_wiki":false,"description":""}
+{"value":"low_pole","count":347,"fraction":0,"in_wiki":false,"description":""}
+{"value":"filipino","count":346,"fraction":0.001,"in_wiki":false,"description":""}
+{"value":"tax_advisor","count":344,"fraction":0.0029000000000000002,"in_wiki":true,"description":"A tax advisor is a financial expert specially trained in tax law"}
+{"value":"kebab;pizza","count":341,"fraction":0.001,"in_wiki":false,"description":""}
+{"value":"hackerspace","count":341,"fraction":0.0001,"in_wiki":true,"description":"Place where people with common interests (science, technology, ...) meet."}
+{"value":"chicane","count":341,"fraction":0.0001,"in_wiki":true,"description":""}
+{"value":"take_right_side","count":336,"fraction":0,"in_wiki":false,"description":""}
+{"value":"tap","count":335,"fraction":0,"in_wiki":false,"description":""}
+{"value":"curry","count":334,"fraction":0.0009000000000000001,"in_wiki":false,"description":""}
+{"value":"take_left_side","count":332,"fraction":0,"in_wiki":false,"description":""}
+{"value":"tanning_salon","count":329,"fraction":0.0001,"in_wiki":true,"description":"Tanning Salon"}
+{"value":"trail_riding_station","count":327,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"palace","count":327,"fraction":0.0007,"in_wiki":false,"description":""}
+{"value":"advertising_agency","count":325,"fraction":0.0027,"in_wiki":true,"description":""}
+{"value":"tiler","count":322,"fraction":0.01,"in_wiki":true,"description":"Workplace or office of a person who lays tiles on floors, swimming pools and such."}
+{"value":"yes","count":321,"fraction":0.0045000000000000005,"in_wiki":false,"description":""}
+{"value":"tidal_flat_slough","count":321,"fraction":0,"in_wiki":false,"description":""}
+{"value":"yes","count":320,"fraction":0.01,"in_wiki":false,"description":""}
+{"value":"jeweller","count":319,"fraction":0.01,"in_wiki":true,"description":"A place where necklaces, rings, brooches, earrings and bracelets and other personal adornments are created or repaired."}
+{"value":"subdistrict","count":318,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"planned","count":313,"fraction":0,"in_wiki":false,"description":""}
+{"value":"clockmaker","count":313,"fraction":0.0098,"in_wiki":true,"description":"Workplace or office of a clockmaker that is building, repairing or engraving clocks of all sorts."}
+{"value":"window_construction","count":308,"fraction":0.009600000000000001,"in_wiki":true,"description":"Construct windows and/or doors"}
+{"value":"depth","count":308,"fraction":0,"in_wiki":false,"description":""}
+{"value":"path","count":306,"fraction":0.0007,"in_wiki":false,"description":""}
+{"value":"bleachers","count":306,"fraction":0.0001,"in_wiki":true,"description":"Raised, tiered rows of benches found at spectator events"}
+{"value":"private","count":304,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"golf_pin","count":304,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"resort","count":301,"fraction":0.00030000000000000003,"in_wiki":true,"description":"Place used for recreation, attracting visitors"}
+{"value":"upholsterer","count":300,"fraction":0.0094,"in_wiki":true,"description":"A place where furniture, especially seats are provided with padding, springs, webbing, and fabric or leather covers."}
+{"value":"gate","count":297,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"optician","count":294,"fraction":0.0092,"in_wiki":true,"description":"A place where lenses for the correction of a person's vision are designed, fitted and dispensed."}
+{"value":"wildlife_hide","count":290,"fraction":0.0001,"in_wiki":true,"description":"A place to observe wildlife."}
+{"value":"aqueduct","count":290,"fraction":0.0006000000000000001,"in_wiki":true,"description":""}
+{"value":"technical_monument","count":288,"fraction":0.0006000000000000001,"in_wiki":false,"description":""}
+{"value":"fuel","count":283,"fraction":0,"in_wiki":true,"description":"Motor fuel station for boats."}
+{"value":"box","count":283,"fraction":0,"in_wiki":false,"description":""}
+{"value":"disused_camp_site","count":282,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"tax","count":281,"fraction":0.0023,"in_wiki":false,"description":""}
+{"value":"room","count":279,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"township","count":272,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"no","count":271,"fraction":0.0038,"in_wiki":false,"description":""}
+{"value":"adult_gaming_centre","count":271,"fraction":0.0001,"in_wiki":true,"description":"A venue with gambling machines."}
+{"value":"disused_station","count":269,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"threshold","count":268,"fraction":0.0009000000000000001,"in_wiki":false,"description":""}
+{"value":"drawbridge","count":268,"fraction":0,"in_wiki":false,"description":""}
+{"value":"yard","count":256,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"agricultural_engines","count":254,"fraction":0.0079,"in_wiki":true,"description":"Planning, and Constructing engines and tools for agricultural use."}
+{"value":"service_station","count":252,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"fish_pass","count":252,"fraction":0,"in_wiki":true,"description":"A fish pass, also known as a fish ladder, a fishway or fish steps, is a structure on or around artificial barriers (such as dams and locks) to facilitate diadromous fishes natural migration."}
+{"value":"yes","count":250,"fraction":0.0009000000000000001,"in_wiki":false,"description":""}
+{"value":"no","count":250,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"video_arcade","count":248,"fraction":0.0001,"in_wiki":true,"description":"DISCOURAGED, use leisure=amusement_arcade instead."}
+{"value":"distillery","count":244,"fraction":0.0076,"in_wiki":true,"description":"An establishment for distilling, especially for distilling alcoholic liquors."}
+{"value":"country","count":236,"fraction":0.0001,"in_wiki":true,"description":"Nation states and other high-level national political/administrative areas."}
+{"value":"reservoir","count":235,"fraction":0,"in_wiki":false,"description":""}
+{"value":"archipelago","count":234,"fraction":0.0001,"in_wiki":true,"description":"Describes to which archipelago an island or islet belongs."}
+{"value":"block","count":232,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"consulting","count":231,"fraction":0.0019,"in_wiki":false,"description":""}
+{"value":"sport","count":227,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"watchmaker","count":225,"fraction":0.007,"in_wiki":true,"description":"A watchmaker is an artisan who makes and repairs watches. Today due to industrial production they mostly repair watches."}
+{"value":"approach_light","count":221,"fraction":0.0008,"in_wiki":false,"description":""}
+{"value":"trampoline","count":220,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"oberleitungsmast","count":220,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"historic","count":220,"fraction":0.0001,"in_wiki":true,"description":""}
+{"value":"water_point","count":216,"fraction":0,"in_wiki":true,"description":"Deprecated: a place to fill fresh water holding tanks of a boat."}
+{"value":"oxbow","count":216,"fraction":0,"in_wiki":false,"description":""}
+{"value":"parish","count":214,"fraction":0.0018000000000000002,"in_wiki":true,"description":""}
+{"value":"taxilane","count":208,"fraction":0.0007,"in_wiki":false,"description":""}
+{"value":"pumping_station","count":208,"fraction":0,"in_wiki":false,"description":""}
+{"value":"bleacher","count":205,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"aquarium","count":205,"fraction":0.0002,"in_wiki":true,"description":"A display of live aquatic flora and/or fauna."}
+{"value":"culvert","count":204,"fraction":0,"in_wiki":false,"description":""}
+{"value":"hot_spring","count":201,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"table_tennis_table","count":197,"fraction":0.0001,"in_wiki":true,"description":"Table Tennis Table"}
+{"value":"court","count":196,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"notary","count":195,"fraction":0.0016,"in_wiki":false,"description":""}
+{"value":"foundation","count":195,"fraction":0.0016,"in_wiki":true,"description":"An office for a foundation."}
+{"value":"construction","count":195,"fraction":0,"in_wiki":false,"description":""}
+{"value":"isolated_track_section","count":194,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"beach","count":191,"fraction":0.0001,"in_wiki":true,"description":""}
+{"value":"crossover","count":184,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"apartments","count":176,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"sluice_gate","count":175,"fraction":0,"in_wiki":false,"description":""}
+{"value":"wash","count":174,"fraction":0,"in_wiki":false,"description":""}
+{"value":"tower","count":172,"fraction":0.0006000000000000001,"in_wiki":false,"description":""}
+{"value":"fire_exit","count":171,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"camping","count":171,"fraction":0.0014,"in_wiki":true,"description":""}
+{"value":"capacitor_bank","count":167,"fraction":0,"in_wiki":false,"description":""}
+{"value":"cabin","count":167,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"joiner","count":163,"fraction":0.0051,"in_wiki":true,"description":""}
+{"value":"arena","count":162,"fraction":0.0001,"in_wiki":true,"description":""}
+{"value":"j-bar","count":160,"fraction":0.0022,"in_wiki":true,"description":"J-bar lift or L-bar lift. Overhead tow-line for skiers and riders with carriers in J-shape."}
+{"value":"neighborhood","count":153,"fraction":0,"in_wiki":false,"description":""}
+{"value":"gambling","count":153,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"mooring","count":148,"fraction":0,"in_wiki":true,"description":"Please use the tag mooring instead."}
+{"value":"*","count":147,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"seaway","count":145,"fraction":0,"in_wiki":true,"description":""}
+{"value":"census-designated","count":144,"fraction":0,"in_wiki":false,"description":""}
+{"value":"apartments","count":144,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"district","count":143,"fraction":0,"in_wiki":true,"description":""}
+{"value":"busbar_switch","count":142,"fraction":0,"in_wiki":false,"description":""}
+{"value":"sign","count":141,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"quango","count":137,"fraction":0.0011,"in_wiki":true,"description":"An office of a Quango."}
+{"value":"audioguide","count":137,"fraction":0.0005,"in_wiki":true,"description":""}
+{"value":"publisher","count":136,"fraction":0.0011,"in_wiki":false,"description":""}
+{"value":"sign","count":133,"fraction":0.0005,"in_wiki":false,"description":""}
+{"value":"forestry","count":132,"fraction":0.0011,"in_wiki":true,"description":"A forestry office"}
+{"value":"tinsmith","count":130,"fraction":0.0041,"in_wiki":true,"description":"Person who makes and repairs things made of light-coloured metal, particularly tinware."}
+{"value":"plasterer","count":128,"fraction":0.004,"in_wiki":true,"description":"Workplace or office of a tradesman who works with plaster, such as forming a layer of plaster on an interior wall or plaster decorative moldings on ceilings or walls."}
+{"value":"compression","count":128,"fraction":0.0043,"in_wiki":false,"description":""}
+{"value":"bicyclemap","count":127,"fraction":0.0005,"in_wiki":false,"description":""}
+{"value":"wildlife","count":124,"fraction":0.0005,"in_wiki":false,"description":""}
+{"value":"register","count":124,"fraction":0.001,"in_wiki":false,"description":""}
+{"value":"terminal","count":123,"fraction":0,"in_wiki":false,"description":""}
+{"value":"bookbinder","count":123,"fraction":0.0038,"in_wiki":true,"description":"Physically assembling a book from a number of sheets of paper."}
+{"value":"ford","count":122,"fraction":0,"in_wiki":false,"description":""}
+{"value":"real_estate_agent","count":120,"fraction":0.001,"in_wiki":true,"description":""}
+{"value":"official_neighborhood","count":120,"fraction":0,"in_wiki":false,"description":""}
+{"value":"house","count":119,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"zip_line","count":118,"fraction":0.0017000000000000001,"in_wiki":true,"description":"Zip lines, Flying fox and similar"}
+{"value":"security_lock","count":117,"fraction":0,"in_wiki":false,"description":""}
+{"value":"vacant","count":115,"fraction":0.001,"in_wiki":false,"description":""}
+{"value":"cooperative","count":114,"fraction":0.0009000000000000001,"in_wiki":false,"description":""}
+{"value":"yes","count":111,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"wastewater","count":111,"fraction":0,"in_wiki":false,"description":""}
+{"value":"floating_barrier","count":111,"fraction":0,"in_wiki":false,"description":""}
+{"value":"winery","count":110,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"hut","count":110,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"dolphin","count":110,"fraction":0,"in_wiki":false,"description":""}
+{"value":"vasi","count":109,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"no","count":109,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"displaced_threshold","count":109,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"map_board","count":108,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"hydro","count":108,"fraction":0,"in_wiki":false,"description":""}
+{"value":"beacon","count":108,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"administration","count":108,"fraction":0.0009000000000000001,"in_wiki":false,"description":""}
+{"value":"confectionary","count":107,"fraction":0.0033,"in_wiki":false,"description":""}
+{"value":"lean_to","count":105,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"builder","count":104,"fraction":0.0032,"in_wiki":false,"description":""}
+{"value":"carpet_layer","count":103,"fraction":0.0032,"in_wiki":true,"description":"A carpet layer is a tradesmen who specializes in laying carpets"}
+{"value":"building","count":103,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"province","count":102,"fraction":0,"in_wiki":false,"description":""}
+{"value":"connection","count":102,"fraction":0,"in_wiki":false,"description":""}
+{"value":"tactile_model","count":99,"fraction":0.0004,"in_wiki":true,"description":"A model of buildings and surroundings that can be explored with fingers."}
+{"value":"tactile_map","count":99,"fraction":0.0004,"in_wiki":true,"description":""}
+{"value":"bank","count":99,"fraction":0,"in_wiki":false,"description":""}
+{"value":"proposed","count":98,"fraction":0,"in_wiki":false,"description":""}
+{"value":"quay","count":97,"fraction":0,"in_wiki":false,"description":""}
+{"value":"converter","count":97,"fraction":0,"in_wiki":true,"description":""}
+{"value":"sea","count":96,"fraction":0,"in_wiki":true,"description":"A part of an ocean."}
+{"value":"department","count":92,"fraction":0,"in_wiki":false,"description":""}
+{"value":"pylon","count":89,"fraction":0,"in_wiki":false,"description":""}
+{"value":"sculpter","count":84,"fraction":0.0026000000000000003,"in_wiki":false,"description":""}
+{"value":"block","count":84,"fraction":0,"in_wiki":false,"description":""}
+{"value":"solicitor","count":83,"fraction":0.0007,"in_wiki":false,"description":""}
+{"value":"front","count":83,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"board;map","count":83,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"boatbuilder","count":82,"fraction":0.0026000000000000003,"in_wiki":true,"description":"Planning, and Contructing boats."}
+{"value":"podologist","count":81,"fraction":0.0007,"in_wiki":false,"description":""}
+{"value":"charity","count":81,"fraction":0.0007,"in_wiki":true,"description":""}
+{"value":"scaffolder","count":80,"fraction":0.0025,"in_wiki":true,"description":"Workplace or office of a tradesman who builds temporary structure used to support people and material in the construction or repair of buildings and other large structures."}
+{"value":"jet_bridge","count":80,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"electronics_repair","count":80,"fraction":0.0025,"in_wiki":false,"description":""}
+{"value":"yes","count":79,"fraction":0.0027,"in_wiki":false,"description":""}
+{"value":"saddler","count":78,"fraction":0.0024000000000000002,"in_wiki":true,"description":"A place where saddles or accessories for cars and boats are produced or repaired."}
+{"value":"picnic_table","count":78,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"electronics","count":78,"fraction":0.0024000000000000002,"in_wiki":false,"description":""}
+{"value":"construction","count":78,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"university","count":77,"fraction":0.0006000000000000001,"in_wiki":false,"description":""}
+{"value":"taxi","count":77,"fraction":0.0006000000000000001,"in_wiki":false,"description":""}
+{"value":"hanger","count":77,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"croft","count":77,"fraction":0,"in_wiki":false,"description":""}
+{"value":"cabinet_maker","count":77,"fraction":0.0024000000000000002,"in_wiki":true,"description":"A person who makes fine wooden furniture"}
+{"value":"low_line","count":76,"fraction":0,"in_wiki":false,"description":""}
+{"value":"bunker","count":76,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"village_sign","count":74,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"info_board","count":74,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"Station 2","count":74,"fraction":0.0006000000000000001,"in_wiki":false,"description":""}
+{"value":"overrun","count":70,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"healer","count":70,"fraction":0.0006000000000000001,"in_wiki":false,"description":""}
+{"value":"commercial","count":70,"fraction":0.0006000000000000001,"in_wiki":false,"description":""}
+{"value":"circuit_breaker","count":70,"fraction":0,"in_wiki":false,"description":""}
+{"value":"side","count":69,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"secondary","count":69,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"real_estate","count":69,"fraction":0.0006000000000000001,"in_wiki":false,"description":""}
+{"value":"no","count":68,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"delivery","count":68,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"unknown","count":67,"fraction":0.0009000000000000001,"in_wiki":false,"description":""}
+{"value":"education","count":67,"fraction":0.0006000000000000001,"in_wiki":false,"description":""}
+{"value":"logistics","count":66,"fraction":0.0005,"in_wiki":false,"description":""}
+{"value":"seasonal","count":64,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"pole;switch","count":64,"fraction":0,"in_wiki":false,"description":""}
+{"value":"yes;staircase","count":63,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"map;board","count":63,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"unincorporated_area","count":59,"fraction":0,"in_wiki":false,"description":""}
+{"value":"shed","count":59,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"school","count":58,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"ruins","count":57,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"camping","count":57,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"anchor","count":57,"fraction":0,"in_wiki":false,"description":""}
+{"value":"parking","count":54,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"guidepost;map","count":53,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"valley","count":52,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"stopbar","count":52,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"guest_house;apartment","count":52,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"vehicle","count":51,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"monument","count":51,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"insulator","count":51,"fraction":0,"in_wiki":false,"description":""}
+{"value":"goods","count":51,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"plaque","count":50,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"park","count":49,"fraction":0,"in_wiki":false,"description":""}
+{"value":"disconnect_switch","count":49,"fraction":0,"in_wiki":false,"description":""}
+{"value":"FIXME","count":48,"fraction":0,"in_wiki":false,"description":""}
+{"value":"blue_plaque","count":46,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"stairwell","count":44,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"signpost","count":44,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"hunting_lodge","count":44,"fraction":0,"in_wiki":false,"description":""}
+{"value":"abandoned","count":44,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"bench","count":42,"fraction":0,"in_wiki":false,"description":""}
+{"value":"historic","count":41,"fraction":0,"in_wiki":false,"description":""}
+{"value":"ORDINARIO - aperto tutto l'anno","count":41,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"peninsula","count":40,"fraction":0,"in_wiki":false,"description":""}
+{"value":"disused","count":40,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"orientation_map","count":39,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"model_runway","count":39,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"capacitor","count":39,"fraction":0,"in_wiki":false,"description":""}
+{"value":"porters","count":38,"fraction":0,"in_wiki":false,"description":""}
+{"value":"field","count":37,"fraction":0,"in_wiki":false,"description":""}
+{"value":"residence","count":36,"fraction":0,"in_wiki":false,"description":""}
+{"value":"narrow_gauge_railway","count":36,"fraction":0,"in_wiki":false,"description":""}
+{"value":"light","count":36,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"areodrome","count":36,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"valley","count":35,"fraction":0,"in_wiki":false,"description":""}
+{"value":"schedule","count":35,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"board/map","count":35,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"office","count":34,"fraction":0,"in_wiki":false,"description":""}
+{"value":"aerobridge","count":34,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"airplane","count":33,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"z","count":32,"fraction":0,"in_wiki":false,"description":""}
+{"value":"inspection_guage","count":32,"fraction":0.0011,"in_wiki":false,"description":""}
+{"value":"guide_post","count":32,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"stopway","count":31,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"preserved_railway","count":31,"fraction":0,"in_wiki":false,"description":""}
+{"value":"creek","count":31,"fraction":0,"in_wiki":false,"description":""}
+{"value":"municipalidad","count":30,"fraction":0,"in_wiki":false,"description":""}
+{"value":"mixed_lift","count":30,"fraction":0.0004,"in_wiki":true,"description":"A mixed lift, containing both gondolas and chairs."}
+{"value":"door","count":30,"fraction":0,"in_wiki":false,"description":""}
+{"value":"canopy","count":30,"fraction":0.0004,"in_wiki":true,"description":"obsolete, please use aerialway=zip_line instead"}
+{"value":"tourism-attraction","count":29,"fraction":0,"in_wiki":true,"description":""}
+{"value":"public","count":29,"fraction":0,"in_wiki":false,"description":""}
+{"value":"proposed","count":29,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"obstacle","count":29,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"holiday_park","count":28,"fraction":0,"in_wiki":false,"description":""}
+{"value":"gypsy_settlement","count":28,"fraction":0,"in_wiki":false,"description":""}
+{"value":"bay","count":28,"fraction":0,"in_wiki":false,"description":""}
+{"value":"allotements","count":28,"fraction":0,"in_wiki":false,"description":""}
+{"value":"straircase","count":27,"fraction":0,"in_wiki":false,"description":""}
+{"value":"self_catering","count":27,"fraction":0,"in_wiki":false,"description":""}
+{"value":"pillar","count":27,"fraction":0.0004,"in_wiki":false,"description":""}
+{"value":"fuel","count":27,"fraction":0.0001,"in_wiki":true,"description":"Aviation fuel station."}
+{"value":"back","count":27,"fraction":0,"in_wiki":false,"description":""}
+{"value":"Approximate location - not yet GPS mapped","count":27,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"restaurant","count":26,"fraction":0,"in_wiki":false,"description":""}
+{"value":"restaurant","count":26,"fraction":0,"in_wiki":false,"description":""}
+{"value":"cape","count":26,"fraction":0,"in_wiki":false,"description":""}
+{"value":"Haripur","count":26,"fraction":0,"in_wiki":false,"description":""}
+{"value":"observatory","count":25,"fraction":0,"in_wiki":false,"description":""}
+{"value":"valve","count":24,"fraction":0.0008,"in_wiki":false,"description":""}
+{"value":"sitemap","count":24,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"national_park","count":24,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"terrace","count":23,"fraction":0,"in_wiki":false,"description":""}
+{"value":"aesthetic_wood","count":23,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"runway_disused","count":22,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"loading_dock","count":22,"fraction":0,"in_wiki":false,"description":""}
+{"value":"snow_park","count":21,"fraction":0.2877,"in_wiki":false,"description":""}
+{"value":"signal_area","count":21,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"pylon","count":21,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"post","count":21,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"clearway","count":21,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"park","count":20,"fraction":0,"in_wiki":false,"description":""}
+{"value":"didactic_panel","count":20,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"stand","count":19,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"building","count":18,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"turning_circle","count":17,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"public_transport","count":17,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"lift","count":17,"fraction":0,"in_wiki":false,"description":""}
+{"value":"backdoor","count":17,"fraction":0,"in_wiki":false,"description":""}
+{"value":"compensation","count":16,"fraction":0.0005,"in_wiki":true,"description":""}
+{"value":"","count":16,"fraction":0,"in_wiki":false,"description":""}
+{"value":"map board","count":15,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"commercial","count":15,"fraction":0,"in_wiki":false,"description":""}
+{"value":"ТП 10/0,4 КВ","count":14,"fraction":0.0005,"in_wiki":false,"description":""}
+{"value":"staff","count":14,"fraction":0,"in_wiki":false,"description":""}
+{"value":"residential","count":14,"fraction":0,"in_wiki":false,"description":""}
+{"value":"platform","count":14,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"To be constructed","count":14,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"pointer","count":13,"fraction":0,"in_wiki":false,"description":""}
+{"value":"difficult","count":13,"fraction":0.1781,"in_wiki":false,"description":""}
+{"value":"Permanent waterhole","count":13,"fraction":0,"in_wiki":false,"description":""}
+{"value":"fixme","count":12,"fraction":0,"in_wiki":false,"description":""}
+{"value":"Tyrolean_traverse","count":12,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"sled","count":11,"fraction":0.1507,"in_wiki":false,"description":""}
+{"value":"elevator","count":11,"fraction":0,"in_wiki":false,"description":""}
+{"value":"Carlos Fiesta","count":11,"fraction":0,"in_wiki":false,"description":""}
+{"value":"60km/h \"Lärmschutz\"","count":11,"fraction":0,"in_wiki":false,"description":""}
+{"value":"ТП 10/04","count":9,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"wire_cable","count":9,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"measuring","count":9,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"abandoned","count":9,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"ЗТП","count":8,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"ТП 10/ 0,4 КВ","count":8,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"КТП 10/04","count":7,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"yes","count":7,"fraction":0.0959,"in_wiki":false,"description":""}
+{"value":"proposed","count":7,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"transformer","count":6,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"nordic","count":6,"fraction":0.08220000000000001,"in_wiki":false,"description":""}
+{"value":"construction","count":6,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"RTE","count":6,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"traction;converter","count":5,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"minor_substation","count":5,"fraction":0.0002,"in_wiki":false,"description":""}
+{"value":"material","count":5,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"lift","count":5,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"disused","count":5,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"cableway","count":5,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"substation","count":4,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"plane","count":4,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"inspection_gauge","count":4,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"gas","count":4,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"valve_group","count":3,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"switchgear","count":3,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"min","count":3,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"measurement","count":3,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"field_gathering","count":3,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"downhill","count":3,"fraction":0.041100000000000005,"in_wiki":false,"description":""}
+{"value":"Skiliftkarussell Winterberg","count":3,"fraction":0.041100000000000005,"in_wiki":false,"description":""}
+{"value":"zip_wire","count":2,"fraction":0,"in_wiki":false,"description":""}
+{"value":"zip_lane","count":2,"fraction":0,"in_wiki":false,"description":""}
+{"value":"transformation_tower","count":2,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"tobaggan","count":2,"fraction":0,"in_wiki":false,"description":""}
+{"value":"service","count":2,"fraction":0,"in_wiki":false,"description":""}
+{"value":"pumping","count":2,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"production","count":2,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"power","count":2,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"line","count":2,"fraction":0,"in_wiki":false,"description":""}
+{"value":"level_crossing","count":2,"fraction":0,"in_wiki":false,"description":""}
+{"value":"inspection guage","count":2,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"generation","count":2,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"distributon","count":2,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"dismantled","count":2,"fraction":0,"in_wiki":false,"description":""}
+{"value":"conveyor","count":2,"fraction":0,"in_wiki":false,"description":""}
+{"value":"central_processing","count":2,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"amusement","count":2,"fraction":0,"in_wiki":false,"description":""}
+{"value":"Rodelpiste","count":2,"fraction":0.0274,"in_wiki":false,"description":""}
+{"value":"","count":2,"fraction":0,"in_wiki":false,"description":""}
+{"value":"ЗТП 10/04","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"ПС 110000/35000/10000","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"ТП 10/ 04","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"transmission, converter","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"traction;distribution","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"tow_rope","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"snowshoe","count":1,"fraction":0.0137,"in_wiki":false,"description":""}
+{"value":"snowmobile","count":1,"fraction":0.0137,"in_wiki":false,"description":""}
+{"value":"slope_lift","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"ropeway_conveyor","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"power_distribution","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"oneway","count":1,"fraction":0.0137,"in_wiki":false,"description":""}
+{"value":"minor distribution","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"measuring;distribution","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"material_transport","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"junction","count":1,"fraction":0.0137,"in_wiki":false,"description":""}
+{"value":"heat","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"halfpipe","count":1,"fraction":0.0137,"in_wiki":false,"description":""}
+{"value":"crossing","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"cablecar","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"cable_waterski","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"cabinet","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"alpine","count":1,"fraction":0.0137,"in_wiki":false,"description":""}
+{"value":"_drag_lift","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"WATER_PURIFIER_PLANT","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"Skiliftkarussel Winterberg","count":1,"fraction":0.0137,"in_wiki":false,"description":""}
+{"value":"Piste ULM","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"Ore","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"120/10kV","count":1,"fraction":0,"in_wiki":false,"description":""}
+{"value":"historic:tower","count":1585,"fraction":0.0001,"in_wiki":false,"description":""}
+{"value":"historic:pole","count":170,"fraction":0,"in_wiki":false,"description":""}
+{"value":"historic:line","count":65,"fraction":0,"in_wiki":false,"description":""}
+{"value":"dismantled:tower","count":57,"fraction":0,"in_wiki":false,"description":""}
+{"value":"abandoned:tower","count":3303,"fraction":0.00030000000000000003,"in_wiki":false,"description":""}
+{"value":"abandoned:line","count":184,"fraction":0,"in_wiki":false,"description":""}
+{"value":"Zakres inwestycji: Politanice","count":40,"fraction":0.0001,"in_wiki":false,"description":""}

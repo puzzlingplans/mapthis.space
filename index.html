@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MapThisSpace ~ OpenStreetMap POI Editor</title>
+	
+	<meta name="Description" CONTENT="Simple OpenStreetMap POI editor; edit OSM on your mobile device">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	 
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+	 <script src="./Leaflet.EasyButton/easy-button.js"></script>
+	 <script src="./js/GPXBuilder.js"></script>
+	 <script src="./js/OverPassLayer.js"></script>
+	 <script src="./js/PresetsDB.js"></script>
+	 <link href="./css/OverPassLayer.css"></script>
+
+	 <script src="./oauthinfo.js"></script>
+	 <script src="./js/osmauth.min.js"></script>
+
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+	<link href="./webfont-maki/css/maki-min.css" rel="stylesheet">
+	<link href="./osmic-font/osmic.css" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	
+        <link rel="stylesheet" href="./jquery-ui-1.11.4/jquery-ui.min.css">
+        <script src="./jquery-ui-1.11.4/jquery-ui.min.js"></script>
+	
+	<script type="text/javascript" src="./js/osm.js"></script>
+
+	<link rel="stylesheet" href="./css/Control.Geocoder.css" />
+	<script src="./js/Control.Geocoder.js"></script>
+
+	<script type="text/javascript" src="./js/BingLayer.js"></script>
+
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+		}
+		html, body {
+			width: 100%;
+			height: 100%;
+			/* http://www.tonylea.com/2010/safari-overflow-hidden-problem/ ??? */
+			position:relative;
+			overflow: hidden;
+		}
+		/* http://stackoverflow.com/questions/12046315/prevent-overscrolling-of-web-page */
+		body > div {
+		    height: 100%;
+		    overflow: scroll;
+		    -webkit-overflow-scrolling: touch;
+		}
+		#map {
+			height: 50%;
+			float: top;
+		}
+		#poilist {
+			position: absolute;
+			width: 100%;
+			height: 50%;
+			left: 0;
+			bottom: 0;
+			background-color: #ffffff;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			float: bottom;
+		}
+		#poidetail {
+			position: absolute;
+			width: 100%;
+			height: 50%;
+			left: 0;
+			bottom: 0;
+			background-color: #ffffff;
+			z-index: 2000;
+			overflow: hidden;
+		}
+		a.leaflet-toggled {
+			background-color: #0000ff;
+			color: #ffffff;
+		}
+		a.leaflet-toggled:hover {
+			background-color: #0000ff;
+			color: #cccccc;
+		}
+		table {
+			width: 100%;
+		}
+		.disclosure {
+			text-align: right;
+			color: #aaaaaa;
+		}
+		tr:hover {
+			background-color: #eeeeff;
+			cursor: pointer;
+		}
+		.right {
+			float: right;
+		}
+		td.poirow_cell:first-child {
+			padding-left: 10px;
+		}
+		.poirow_modified {
+			color: #3333ff;
+			font-style: italic;
+		}
+		.poirow_new {
+			color: #3333ff;
+			font-style: italic;
+		}
+		.poirow_new:after {
+			content: " - NEW";
+			font-size: 9px;
+		}
+		.poirow_deleted {
+			color: #ff3333;
+			font-style: italic;
+		}
+		.poirow_deleted:after {
+			content: " - DELETED";
+			font-size: 9px;
+		}
+		.distance {
+			font-size: 11px;
+		}
+		#spinner {
+			text-align: center;
+		}
+		.ui-dialog {
+			z-index: 5000;
+		}
+	</style>
+</head>
+<body>
+	<div id="map"></div>
+	
+	<div id="poilist">
+	
+            <table style="display:none">
+            <tr id="poirow">
+                    <td class="poirow_cell">
+                            <i class="icon"></i>
+                    </td>
+                    <td width="100%">
+                            <span class="name">Place Name</span>
+                    </td>
+                    <td>
+                            <span class="distance"></span>
+                    </td>
+                    <td class="disclosure"><i class="fa fa-chevron-right"></i></td>
+            </tr>
+            </table>
+
+            <div>
+                    <span>
+                            <button id="addpoi" class="button-primary" style="display:none">New Place...</button>
+                    </span>
+                    <span class="right" id="poi_search_filter">
+                            <a href="#" title="Show default features" class="leaflet-bar-part leaflet-toggled"><i class="fa fa-institution"></i></a>
+                            <a href="#" title="Show transportation" class="leaflet-bar-part"><i class="fa fa-car"></i></a>
+                            <a href="#" title="Show natural features" class="leaflet-bar-part"><i class="fa fa-tree"></i></a>
+                    </span>
+            </div>
+            
+            <div id="spinner" style="display:none">
+            	<div class="row">
+            		<div class="one-third column">
+				<i class="fa fa-refresh fa-spin fa-4x"></i>
+			</div>
+		</div>
+	    </div>
+            
+            <table id="poitable">
+            </table>
+	
+	</div>
+	
+	<div id="poidetail" style="display:none">
+		<iframe width="100%" height="100%"></iframe>
+	</div>
+
+	<div id="poiconfirm" style="display:none">
+		   <table>
+	             <tr class="csnode_proto">
+	             	<td>
+	             		<span class="csnode_action">modify</span>
+	             		<!-- <span class="csnode_type">node</span> -->
+	             		<b class="csnode_name">Name</b>
+	             		<!--
+	             		<span class="csnode_kvs">key=value...</span>
+	             		-->
+	             	</td>
+	             	<!--
+	             	<td>
+		             	<a class="csnode_info"><i class="fa fa-info-circle"></i></a>
+		        </td>
+		        -->
+		        <td>
+		             	<a class="csnode_go"><i class="fa fa-chevron-circle-right"></i></a>
+		        </td>
+	             </tr>
+	           </table>
+	</div>
+	
+	<div id="poireposition" style="display:none">
+		Move the map so that the crosshairs are over the new location of the <span class="csnode_name">object</span> and tap the Move button.
+	</div>
+
+	<div id="poi_flagproblem" style="display:none">
+		<div><input type="checkbox"> I can't find this place.</div>
+		<div><input type="checkbox"> Vacated or abandoned.</div>
+		<div><input type="checkbox"> Closed, with new tenants.</div>
+		<div><input type="checkbox"> Moved to a different location.</div>
+		<div><input type="checkbox"> Duplicate location.</div>
+		<div><textarea cols="25" placeholder="Leave a comment..."></textarea></div>
+	</div>
+	
+	<div id="dlg_help" style="display:none">
+		<p><b>mapthis.space</b> - a web-based POI editor for <a target="_osm" href="https://openstreetmap.org">OpenStreetMap</a><p>
+		<p>Report bugs on <a href="https://github.com/puzzlingplans/mapthis.space/issues">Github</a>.</p>
+		<p><small>App &copy; Puzzling Plans LLC; Map data &copy; OpenStreetMap contributors; Aerial data &copy; Bing Maps</small></p>
+	</div>
+	
+	<div id="dlg_intro" style="display:none">
+		<p>Welcome to <b>mapthis.space</b>!</p>
+		<p>You can add and edit POIs (points-of-interest) here.</p>
+		<p>Tap <i class="fa fa-cloud-upload"></i> to upload when you're done.
+		You'll need an <a target="_osm" href="https://www.openstreetmap.org/login">OpenStreetMap</a> account.</p>
+	</div>
+	
+<script>
+
+		var server_obj = null;
+		var current_obj = null;
+
+		var osmLayer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			maxZoom: 19,
+			//detectRetina: true,
+			reuseTiles: true,
+		});
+		
+		var bingLayer = new BingLayer('http://t{s}.tiles.virtualearth.net/tiles/a{q}.jpeg?g=1398', {
+			maxZoom: 19,
+			detectRetina: true,
+			reuseTiles: true,
+			//opacity: 1.0,
+			subdomains: ['0', '1', '2', '3', '4'],
+			attribution: '&copy; <a href="http://bing.com/maps">Bing Maps</a>'
+		});
+
+		var map = L.map('map', {
+			maxZoom: 19,
+			layers: [ osmLayer ]
+		});
+		
+		// add search control
+		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',
+		}).addTo(map);
+		L.Control.geocoder().addTo(map);
+
+		// add map layer select
+		var baseMaps = {
+			"OSM": osmLayer,
+			"Bing": bingLayer
+		};
+		L.control.layers(baseMaps).addTo(map);
+		
+		var locmarker = null;
+		var loccircle = null;
+
+		var track = null;
+		var gpx = null;
+		var locating = false;
+		var helpBtn = L.easyButton('fa-info-circle', function(){ showHelp(); }, 'Show help');
+		var locBtn = L.easyButton('fa-location-arrow', function(){ toggleLocationTracking(); }, 'Toggle location tracking');
+		//var trackBtn = L.easyButton('fa-paw', function(){ toggleTrackRecording(); }, 'Toggle GPS track recording'); // TODO: login?
+		var uploadBtn = L.easyButton('fa-cloud-upload', function(){ uploadChangesAfterLogin(); }, 'Upload changes');
+		
+		// help/info dialog
+		function showHelp()
+		{
+			$('#dlg_help').dialog({
+				title: 'About'
+			});
+			ga('send', 'event', 'help', 'show');
+		}
+		
+		// intro dialog
+		if (!localStorage.getItem("osm.hello"))
+		{
+			$('#dlg_intro').dialog({
+				title: 'Welcome!',
+				buttons: [{
+					text: "Continue",
+					click: function() { $(this).dialog("close"); },
+					beforeClose: function() { localStorage.setItem("osm.hello","true"); }
+				}]
+			});
+			ga('send', 'event', 'help', 'intro');
+		}
+		
+		function uploadChangesAfterLogin()
+		{
+			// TODO: disable?
+	                setToggled(uploadBtn, true);
+			osmLogin(function() { 
+	                    setToggled(uploadBtn, false);
+	                    uploadChanges();
+		        });
+		}
+		
+		function uploadChanges()
+		{
+			var xml = changesetGetXML();
+			if (!xml) { alert('No changes made since last upload.'); return; }
+			
+			var $dlg = $('<div><table><tbody></tbody></table></div>');
+			var $xml = $(xml);
+			var $ulist = $dlg.find('tbody');
+			var $protoli = $('#poiconfirm').find('.csnode_proto');
+			
+			$xml.find('create, modify, delete').children().each(function(index) {
+				var $csi = $(this);
+				var $li = $protoli.clone();
+				var action = $csi.parent().get(0).tagName;
+				var type = $csi.get(0).tagName;
+				var id = $csi.attr('id');
+				var obj = changesetGetStagedObject(type, id);
+				if (!obj.name) presets_db.updateObjName(obj);
+				var name = obj.name;
+				// TODO: cool to have changed tags
+				/*				
+				var tagnames = $csi.find('tag').map(function(index,el) {
+					return $(el).attr('k') + "=" + $(el).attr('v');
+				}).get().join(', ');
+				*/
+				
+				console.log(action, type, id, obj, this);
+				//var obj = changesetGetStagedObject(type,id);
+				$li.attr('csnode_type', type);
+				$li.attr('csnode_id', id);
+				$li.find('.csnode_action').text(action);
+				$li.find('.csnode_type').text(type);
+				$li.find('.csnode_objid').text(id);
+				$li.find('.csnode_name').text(name);
+				//$li.find('.csnode_kvs').text(tagnames);
+				$li.find('.csnode_info').click(function() {
+					showXMLForObject(type, id, $csi);
+				});
+				$li.find('.csnode_go').click(function() {
+					showDetailPane(null, obj); // TODO?
+					$dlg.dialog("destroy");
+					ga('send', 'event', 'upload', 'go');
+				});
+				$ulist.append($li);
+			});
+			
+			$dlg.dialog({
+				modal:   true,
+				height:  400,
+				width:   320,
+				draggable: false,
+				closeOnEscape: true,
+				closeText: "Cancel",
+				title:   "Upload Changes",
+				buttons: [
+					/*{
+						text: "Cancel",
+						click: function() { $( this ).dialog( "close" ); }
+					},*/
+					{
+						text: "Reset",
+						click: function() {
+							$( this ).dialog( "destroy" );
+							clearAllChanges();
+						}
+					},
+					{
+						text: "Submit",
+						click: function() {
+							$( this ).dialog( "destroy" );
+							finishUploadingChanges();
+						}
+					}
+				]
+			});
+		}
+		
+		function showXMLForObject(type, id, xml)
+		{
+			var xmlstr = (new XMLSerializer()).serializeToString(xml.get(0));
+			alert(xmlstr);
+		}
+		
+		function clearAllChanges()
+		{
+			if (confirm('Clear all changes since last upload?')) {
+				changesetClearAll();
+				reloadLocalLayers();
+				ga('send', 'event', 'upload', 'clear');
+			}
+		}
+
+		function finishUploadingChanges()
+		{
+			ga('send', 'event', 'upload', 'finish');
+			osmUploadChanges(function() {
+				alert('Changes uploaded.');
+				reloadPOILayers();
+				ga('send', 'event', 'upload', 'complete');
+			});
+		}
+		
+		function saveTrack(track)
+		{
+			//var pts = track.getLatLngs();
+			//pts = GDouglasPeucker(pts, 3);
+			// TODO: peucker?
+			// TODO: persist?
+			osmUploadTrack(gpx, function() {
+				alert('Track uploaded.');
+			});
+		}
+		
+		function toggleTrackRecording() {
+			if (track == null) {
+				setToggled(trackBtn, true);
+				track = L.polyline([ ]).addTo(map);
+				gpx = new GPXBuilder();
+				if (!locating) toggleLocationTracking();
+			} else {
+				setToggled(trackBtn, false);
+				saveTrack(track);
+				track = null;
+				gpx = null;
+			}
+		}
+		
+		function toggleLocationTracking()
+		{
+			if (!locating) {
+				setToggled(locBtn, true);
+				map.locate({setView: true, maxZoom: 18, watch: true, enableHighAccuracy: true});
+				// TODO: http://stackoverflow.com/questions/9709891/prevent-ios-mobile-safari-from-going-idle-auto-locking-sleeping?
+			} else {
+				setToggled(locBtn, false);
+				map.stopLocate();
+				if (locmarker != null) map.removeLayer(locmarker);
+				if (loccircle != null) map.removeLayer(loccircle);
+				locmarker = null;
+				loccircle = null;
+			}
+			locating = !locating;
+		}
+
+		function updateTrack(e) {
+			if (track != null) track.addLatLng(e.latlng);
+			if (gpx != null) gpx.addEvent(e);
+		}
+
+		function setToggled(btn,toggled) {
+			var el = btn.getContainer().getElementsByTagName('a')[0];
+			if (toggled)
+				el.classList.add('leaflet-toggled'); //el.className += ' leaflet-toggled';
+			else
+				el.classList.remove('leaflet-toggled'); //className = el.className.replace(/ leaflet-toggled/g,'');
+		}
+
+		function onLocationFound(e) {
+			var radius = e.accuracy / 2;
+			if (locmarker == null) {
+				locmarker = L.marker(e.latlng).addTo(map);
+			} else {
+				locmarker.setLatLng(e.latlng);
+			}
+			if (loccircle == null) {
+				loccircle = L.circle(e.latlng, radius).addTo(map);
+			} else {
+				loccircle.setLatLng(e.latlng);
+				loccircle.setRadius(radius);
+			}
+			//L.marker(e.latlng).addTo(map)
+			//	.bindPopup("You are within " + radius + " meters from this point").openPopup();
+			updateTrack(e);
+			updatePOIList();
+		}
+
+		function onLocationError(e) {
+			cancelTracking();
+			// TODO: we still need a location
+			alert(e.message);
+			ga('send', 'event', 'location', 'error', e.message);
+		}
+		
+		function cancelTracking()
+		{
+			if (locating && track == null) toggleLocationTracking();
+		}
+		
+		function onDragStart(e) {
+			cancelTracking();
+		}
+		
+		function onDragEnd(e) {
+			updatePOIList();
+			scrollPOIListToTop();
+		}
+
+		map.on('locationfound', onLocationFound);
+		map.on('locationerror', onLocationError);
+		map.on('dragstart', onDragStart);
+		map.on('dragend', onDragEnd);
+
+		toggleLocationTracking();
+
+// http://gis.stackexchange.com/questions/90225/how-to-add-a-floating-crosshairs-icon-above-leaflet-map
+// Add in a crosshair for the map
+// TODO: when map is dragged, stop zooming to location
+// TODO: prevent selction of <div>
+map.on('load', function(e) {
+        var crosshairIcon = L.icon({
+            iconUrl: './images/crosshairs_144.png',
+            iconSize:     [144, 144], // size of the icon
+            iconAnchor:   [72, 72], // point of the icon which will correspond  marker's location
+        });
+        crosshair = new L.marker(map.getCenter(), {
+        	icon: crosshairIcon,
+        	clickable:false,
+        	keyboard:false,
+        	opacity:0.7,
+        });
+        crosshair.addTo(map);
+        // also enable Add POI button
+        $('#addpoi').show();
+});
+
+// Move the crosshair to the center of the map when the user pans
+map.on('move', function(e) {
+    crosshair.setLatLng(map.getCenter());
+});
+
+//OverPassAPI overlay
+var opl = null;
+
+function getCachedPOIs()
+{
+	// TODO: name collision with node/way/relation
+	return opl ? opl._ids : null;
+}
+
+function updatePOIList()
+{
+	if (!opl) return;
+	var unnamedDistance = 50;
+	var namedDistance = 250;
+	var maploc = map.getCenter();
+	var list = [];
+	var ids = {'node':{}, 'way':{}};
+	
+	function addPOI(obj)
+	{
+		// don't add entries twice
+		if (ids[obj.type][obj.id])
+			return;
+		// named objects are seen at larger distances than unnamed
+		var maxDist = obj.tags && obj.tags.name ? namedDistance : unnamedDistance;
+	        var pos = objGetCenter(obj);
+		obj.distance = maploc.distanceTo(pos);
+		if (obj.id < 0 || obj.distance < maxDist)
+			list.push(obj);
+		ids[obj.type][obj.id] = true;
+		return obj;
+	}
+	
+	// add POIs that are modified
+	var newobjs = changesetGetObjects(true,true);
+	for (var i in newobjs)
+	{
+		addPOI(newobjs[i]);
+	}
+	// add POIs (nodes and ways) from Overpass layer
+	// (that aren't already on the map)
+	for (var id in opl._ids)
+	{
+		addPOI(opl._ids[id]);
+	}
+	// TODO: add deleted POIs
+	// sort by descending distance to center
+	list.sort(function(a,b) { return a.distance - b.distance; });
+	// add to list table
+	var detail = $('#poilist');
+	var table = $('#poitable');
+	var protorow = $('#poirow');
+	table.empty();
+	var maxcount = 20;
+	var count = list.length < maxcount ? list.length : maxcount;
+	for (var i=0; i<count; i++)
+	{
+		var obj = list[i];
+		var cset = changesetGetStagedObject(obj.type, obj.id);
+		var modified = cset && cset.tags && !$.isEmptyObject(cset.tags);
+		var currobj = $.extend(true, {}, obj, cset);
+		var row = protorow.clone();
+		var preset = presets_db.updateObjName(currobj);
+		row.find(".name").text(currobj.name);
+		row.find('i.icon').removeClass().addClass(preset ? presets_db.getIconForPreset(preset) : "");
+		if (currobj.distance > namedDistance)
+			row.find(".distance").text((currobj.distance/1000).toFixed(1) + "\xa0km");
+		if (cset && cset.deleted)
+			row.find(".name").addClass('poirow_deleted');
+		else if (obj.id < 0)
+			row.find(".name").addClass('poirow_new');
+		else if (modified)
+			row.find(".name").addClass('poirow_modified');
+		// TODO: highlight new objs
+		// TODO: icons
+		row.appendTo(table);
+		(function(row,obj,currobj) {
+			row.click(function (ev) {
+				showDetailPane(obj.id>0?obj:null, currobj);
+			});
+		}) (row,obj,currobj);
+	}
+}
+
+function scrollPOIListToTop()
+{
+        // scroll list top top
+        var $poilist = $('#poilist');
+        if ($poilist.scrollTop() > 0)
+                $poilist.animate({ scrollTop: 0 });
+}
+
+function showDetailPane(serverobj, curobj)
+{
+	if (curobj && curobj.deleted) {
+		if (confirm("You've already marked this place as deleted, reopen it?")) {
+			curobj.deleted = false;
+			showDetailPane(serverobj, curobj);
+			updatePOIList();
+		}
+		return;
+	}
+	
+	server_obj = $.extend(true, {}, serverobj); // TODO: serverobj null?
+	current_obj = $.extend(true, {}, curobj);
+	// zoom to center of POI if not tracking
+	var b = current_obj.bounds;
+	if (b && !locating) {
+		cancelTracking();
+		map.panInsideBounds(L.latLngBounds(L.latLng(b.minlat, b.minlon), L.latLng(b.maxlat, b.maxlon)));
+	} else if (current_obj.lat && current_obj.lon) {
+		cancelTracking();
+		map.panTo([current_obj.lat, current_obj.lon]);
+	}
+	// slide in detail pane
+	var width = $('#poidetail').width();
+	$('#poilist').animate({ left: "-" + width });
+	$('#poidetail').show().css('height', '50%').animate({ left: "0" });
+	var iframe = $('#poidetail').show(500).find('iframe');
+	if (curobj) {
+		iframe.attr('src', 'viewpoi.html?nodeid=' + curobj.id + '&obj=' + encodeURIComponent(JSON.stringify(curobj)));
+	} else {
+		iframe.attr('src', 'viewpoi.html');
+	}
+	ga('send', 'event', 'poi', 'show', curobj?'edit':'new');
+}
+
+function hideDetailPane()
+{
+	if (current_obj == null)
+		return;
+	
+	var width = $('#poidetail').width();
+	$('#poilist').animate({ left: "0" });
+	$('#poidetail').animate({ left: "" + width });
+	current_obj = null;
+	updatePOIList();
+	scrollPOIListToTop();
+}
+
+$('#poidetail').css('left', $(window).width());
+
+function maximizeDetailPane()
+{
+	$('#poidetail').animate({ height: '100%' });
+}
+
+function minimizeDetailPane()
+{
+	$('#poidetail').animate({ height: '50%' });
+}
+
+function updateTags(tags, preset)
+{
+	// TODO: assert current_obj?
+	// compute keys changed from server obj (TODO: still needed)?
+	var server_changed = tagsChanged(tags, server_obj.tags);
+	var current_changed = tagsChanged(tags, current_obj.tags);
+	if (!$.isEmptyObject(current_changed))
+	{
+                // bing active?
+                if (map.hasLayer(bingLayer)) {
+                        tags['source:position'] = 'Bing';
+                }
+		// TODO: add new POI to list
+		console.log('server diff', server_changed);
+		console.log('current diff', current_changed);
+		current_obj.tags = tags;
+		console.log('current obj', current_obj);
+		presets_db.updateObjName(current_obj);
+		changesetAddObject(current_obj);
+	} else {
+		// if object has no tags, delete it
+		if ($.isEmptyObject(current_obj.tags) && feature_editing)
+		{
+		        newItemsLayer.removeLayer(feature_editing);
+		}
+	}
+}
+
+function deleteCurrentObject()
+{
+	// TODO: assert current_obj?
+	changesetDeleteObject(current_obj);
+	reloadLocalLayers();
+}
+
+function revertCurrentObject()
+{
+	// TODO: assert current_obj?
+	changesetRevertObject(current_obj);
+	reloadLocalLayers();
+}
+
+function flagCurrentObject()
+{
+	var obj = current_obj;
+	var name = obj ? obj.name : ""; // TODO?
+	$('#poi_flagproblem').dialog({
+		title:name,
+		modal:true,
+		buttons: [
+			{
+				text: "Submit",
+				click: function() {
+					var comment = $(this).find('textarea').val();
+					var reasons = $(this).find('input:checked');
+					comment = reasons.parent().text() + " " + comment;
+					if (name.length) comment = name + ": " + comment;
+					if (obj) comment = "[" + obj.type + "/" + obj.id + "] " + comment;
+					console.log(comment);
+					// TODO: spinner
+					osmUploadNote(obj, comment, function() {
+						alert("Comment submitted.");
+					});
+					$( this ).dialog("close");
+				}
+			}
+		]
+	});
+}
+
+function repositionCurrentObject()
+{
+	var obj = current_obj;
+	if (obj == null || obj.type != 'node')
+	{
+		alert('You may only reposition individual nodes, not ways (buildings, streets, areas, etc).');
+		return;
+	}
+	// TODO: assert current_obj?
+	$('#poireposition').dialog({
+		position: { at: "center bottom" },
+		closeText: "Cancel",
+		title: "Reposition",
+		buttons: [
+			{
+				text: "Move",
+				click: function() {
+					$(this).dialog("close");
+					obj.lat = map.getCenter().lat;
+					obj.lon = map.getCenter().lng;
+					changesetAddObject(obj);
+					reloadLocalLayers();
+					// remove old dot, if present
+					var olddot = opl._circles[obj.id];
+					if (olddot)
+					{
+						opl.removeLayer(olddot);
+						delete opl._circles[obj.id];
+					}
+				}
+			}
+		]
+	});
+}
+
+function addNewPOIMarker(obj)
+{
+        var pos = new L.LatLng(obj.lat, obj.lon);
+	feature_editing = L.circle(pos, 5, {
+          color: '#3333ff',
+          fillColor: '#66ff66',
+          fillOpacity: 0.5
+        });
+        newItemsLayer.addLayer(feature_editing);
+}
+
+$('#addpoi').click(function() {
+	var center = map.getCenter();
+	if (!center) { alert("Map not loaded yet."); return; }
+	var obj = {
+		id : changesetNextSeq(),
+		type : 'node',
+		lat : center.lat,
+		lon : center.lng,
+		tags : {},
+	};
+	// TODO: what if it moves?
+	addNewPOIMarker(obj);
+	showDetailPane(null, obj); // TODO?
+});
+
+$('.close').click(function() {
+	hideDetailPane();
+});
+
+POI_SEARCH_PARAMS = [
+	{
+		keys: ['amenity','craft','emergency','historic','leisure','man_made','military','office','shop','sport','tourism'],
+		named: false
+	},
+	{
+		keys: ['highway','barrier'],
+		named: false
+	},
+	{
+		keys: ['natural','landuse','waterway'],
+		named: false
+	},
+	{
+		keys: ['building'],
+		named: false
+	}
+];
+
+searchParams = POI_SEARCH_PARAMS[0]; 
+
+var filterButtons = $('#poi_search_filter').find('a');
+filterButtons.click(function() {
+	var btn = $(this);
+	var cls = 'leaflet-toggled';
+	btn.addClass(cls);
+	btn.siblings().removeClass(cls);
+	var index = filterButtons.index(btn);
+	searchParams = POI_SEARCH_PARAMS[index];
+	refreshOverpassLayer();
+	ga('send', 'event', 'filter', 'select', 'index_'+index);
+});
+
+function refreshOverpassLayer()
+{
+  var query;
+  var nf = searchParams.named ? '["name"]' : searchParams.unnamed ? '["name"!~"."]' : '[~"."~"."]';
+  //nf += '["building"!="yes"]';
+  query = '(\
+    node(BBOX)' + nf + ';\
+    way(BBOX)' + nf + ';\
+  )->.a;\
+  (';
+  for (var i in searchParams.keys)
+  {
+    query += "node.a[" + searchParams.keys[i] + "];way.a[" + searchParams.keys[i] + "];";
+  }
+  query += ");";
+  query += " out meta bb qt;";
+  //console.log(query);
+
+  // clear old data
+  if (opl != null) map.removeLayer(opl);
+  $('#poitable').empty().append( $('#spinner').clone().show()/*fadeIn(500)*/ );
+
+  // load new layer
+  opl = new L.OverPassLayer({
+    minzoom: 17,
+    query: query,
+    afterRequest: updatePOIList,
+    //endpoint: osmAPIEndpoint,
+  });
+  opl._poiInfo = function(obj) {
+    var tags = obj.tags;
+    var id = obj.id;
+    var link = document.createElement("span");
+    //var link = document.createElement("a");
+    //link.href = 'javascript:showTagsForServerObject("' + obj.type + '",' + obj.id + ')';
+    if (!obj.name) presets_db.updateObjName(obj);
+    link.appendChild(document.createTextNode(obj.name));
+    var div = document.createElement("div")
+    div.appendChild(link);
+    return div;
+  };
+
+  map.addLayer(opl);
+  return opl;
+}
+
+// new items (pre-commit)
+var feature_editing; // circle representing current feature under edit
+var newItemsLayer;
+
+function refreshNewFeaturesLayer()
+{
+	if (newItemsLayer) map.removeLayer(newItemsLayer);
+	newItemsLayer = new L.FeatureGroup();
+	map.addLayer(newItemsLayer);
+	// TODO: modified and deleted?
+	var newobjs = changesetGetObjects(true,true);
+	for (var i in newobjs)
+	{
+		if (newobjs[i].lat)  // i.e. must be a node
+		{
+			addNewPOIMarker(newobjs[i]);
+		}
+	}
+}
+
+function reloadLocalLayers()
+{
+	refreshNewFeaturesLayer();
+	if (map._loaded)
+	{
+		updatePOIList();
+		scrollPOIListToTop();
+	}
+}
+
+function reloadPOILayers()
+{
+	refreshOverpassLayer();
+	reloadLocalLayers();
+}
+
+// create initial feature layers
+reloadPOILayers();
+
+// load presets database
+var presets_db;
+$.getJSON('presets/db.json', function(data) {
+	presets_db = new PresetsDB(data);
+});
+
+</script>
+
+<script src="./js/ga.js"></script>
+
+</body>
+</html>
